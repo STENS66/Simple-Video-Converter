@@ -1,0 +1,33 @@
+# version.txt
+VSVersionInfo(
+    ffi=FixedFileInfo(
+        filevers=(1, 0, 0, 0),  # Version complète avec 4 éléments
+        prodvers=(1, 0, 0, 0),  # Version complète avec 4 éléments
+        mask=0x3f,
+        flags=0x0,
+        OS=0x4,  # VOS_NT_WINDOWS64
+        fileType=0x1,  # VFT_APP
+        subtype=0x0,
+        date=(0, 0)
+    ),
+    kids=[
+        StringFileInfo(
+            [
+                StringTable(
+                    '040C04B0',  # Code de langue pour le français
+                    [StringStruct('CompanyName', 'Gaëtan Sencie'),
+                     StringStruct('FileDescription', 'Application de conversion vidéo'),
+                     StringStruct('FileVersion', '1.0.0.0'),  # Version complète avec 4 éléments
+                     StringStruct('InternalName', 'Simple-Video-Converter'),
+                     StringStruct('LegalCopyright', '© Gaëtan Sencie 2025 tous droits réservés'),
+                     StringStruct('OriginalFilename', 'main.exe'),
+                     StringStruct('ProductName', 'Simple-Video-Converter'),
+                     StringStruct('ProductVersion', '1.0.0.0'),  # Version complète avec 4 éléments
+                     StringStruct('Author', 'Gaëtan Sencie'),
+                     StringStruct('OS', '64-bit'),
+                     StringStruct('Processor', 'x64')])
+            ]),
+        VarFileInfo([VarStruct('Translation', [1036, 1200])])
+    ]
+)
+
