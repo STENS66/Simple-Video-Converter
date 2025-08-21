@@ -1,4 +1,4 @@
-Simple-Video-Converter - Version 1.0
+Simple-Video-Converter - Version 1.1
 
 Copyright © Gaëtan Sencie 2025
 Tous droits réservés.
