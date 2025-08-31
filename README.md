@@ -32,6 +32,13 @@ L'application "**Simple-Video-Converter**" propose une interface utilisateur cla
 
 
 
+**Choix des langues de l'interface**:
+
+
+*  Choisissez entre le français, l'anglais et l'allemand via l'onglet "Langues" dans la barre de menu.
+
+
+
 **Ajout de fichiers flexible** :
 
 
