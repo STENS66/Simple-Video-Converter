@@ -180,7 +180,8 @@ Merci d'utiliser "**Simple-Video-Converter**" !
 
 ## Références & Mots-clés
 
-Développé par **Gaëtan Sencie**, développeur Python autodidacte spécialisé dans la création d’applications Windows simples, sécurisées et performantes.  
+Développé par **Gaëtan Sencie**, développeur Python.  
+  
 **Simple-Video-Converter** est officiellement disponible sur le **Microsoft Store** et sur **GitHub**, garantissant une diffusion fiable et validée.
 
 **Mots-clés** : conversion vidéo, FFmpeg, FFprobe, confidentialité, application hors ligne, sécurité des données, accélération matérielle, NVENC, Quick Sync, AMF, codecs vidéo, MKV, MP4, AVI, WebM, Windows 10, Windows 11.
