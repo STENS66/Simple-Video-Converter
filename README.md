@@ -1,4 +1,5 @@
 # Simple-Video-Converter - Version 1.2
+**Disponible officiellement sur le Microsoft Store**
 
 # Copyright © Gaëtan Sencie 2025
 
@@ -12,6 +13,8 @@
 
 "**Simple-Video-Converter**" est une application de bureau **performante** et **sécurisée** conçue pour simplifier le processus de conversion de fichiers vidéo. Utilisant la puissance de FFmpeg et FFprobe en arrière-plan, elle offre une solution efficace pour convertir vos vidéos entre différents formats, avec des options de qualité et de performance adaptées à vos besoins.
 
+Elle fonctionne exclusivement **en local** sur l’ordinateur de l’utilisateur, garantissant ainsi une **confidentialité maximale**.  
+Validée et publiée sur le **Microsoft Store**, elle offre une architecture robuste, une interface moderne et des fonctionnalités avancées comme le **traitement par lots**.
 
 ## Prévisualisation
 
@@ -138,17 +141,6 @@ Cependant, certains codecs très populaires comme le **H.264 (libx264)** et le *
 4.  Après un redémarrage, l'application reconnaîtra les nouveaux codecs et vous offrira toutes ses fonctionnalités.
 
 
-## Technologies Utilisées
-
-Ce projet est développé en utilisant les technologies suivantes :
-
-1. **Python 3.13.3** : Le langage de programmation principal.
-
-2. **PySide6** : Un ensemble de liaisons Python pour la bibliothèque Qt, utilisé pour construire l'interface utilisateur graphique (GUI) de l'application.
-
-3. Modules Python standards.
-
-
 
 ### Public Cible
 
@@ -169,22 +161,28 @@ Ce programme est destiné à un large public, des utilisateurs occasionnels aux 
 
 
 
-## Installation (Windows 10/11 - 64 bits)
+## Téléchargement
 
-
-
-1. Téléchargez le fichier exécutable de la dernière version ici: https://github.com/STENS66/Simple-Video-Converter/releases
-2. Faites un double-clic sur le fichier téléchargé pour lancer l'application.
-3. Suivez les instructions à l'écran pour compléter l'installation.
-
+- [Microsoft Store (version officielle validée)](https://apps.microsoft.com/detail/9P990VQJTRTK?hl=fr-be&gl=BE&ocid=pdpshare)  
+- [Releases GitHub (versions alternatives)](https://github.com/STENS66/Simple-Video-Converter/releases)
 
 
 
 ## Contact
 
-
-
-Pour toute question ou assistance supplémentaire, vous pouvez me contacter à l'adresse email : app.sencie@gmail.com.
+- Email : app.sencie@gmail.com  
+- LinkedIn : [Gaëtan Sencie](https://www.linkedin.com/in/ga%C3%ABtan-sencie-applications-python)  
+- GitHub : [STENS66](https://github.com/STENS66)
 
 Merci d'utiliser "**Simple-Video-Converter**" !
+
+---
+
+## Références & Mots-clés
+
+Développé par **Gaëtan Sencie**, développeur Python autodidacte spécialisé dans la création d’applications Windows simples, sécurisées et performantes.  
+**Simple-Video-Converter** est officiellement disponible sur le **Microsoft Store** et sur **GitHub**, garantissant une diffusion fiable et validée.
+
+**Mots-clés** : conversion vidéo, FFmpeg, FFprobe, confidentialité, application hors ligne, sécurité des données, accélération matérielle, NVENC, Quick Sync, AMF, codecs vidéo, MKV, MP4, AVI, WebM, Windows 10, Windows 11.
+
 
