@@ -1,0 +1,39 @@
+Simple-Video-Converter - Version 1.2
+
+Copyright © Gaëtan Sencie 2025
+Tous droits réservés.
+
+Le présent logiciel et tous les fichiers associés (ci-après le "Logiciel") sont la propriété exclusive de Gaëtan Sencie (ci-après l'"Auteur"). Le Logiciel est protégé par les lois belges et internationales sur le droit d'auteur ainsi que par les conventions internationales.
+
+1. Droits d’utilisation :
+
+L’Utilisateur est autorisé à utiliser le Logiciel à des fins strictement personnelles. Toute distribution, copie, modification ou utilisation commerciale du Logiciel, en tout ou en partie, est strictement interdite sans le consentement écrit préalable de l'Auteur. L'utilisation personnelle exclut explicitement toute activité commerciale, même si celle-ci est réalisée à titre gratuit.
+
+2. Redistribution :
+
+La redistribution du Logiciel, sous sa forme originale ou modifiée, est interdite sans le consentement explicite de l’Auteur. Toute tentative de vente, location, prêt ou transfert du Logiciel à un tiers sans l'accord de l'Auteur constitue une violation du droit d'auteur.
+
+3. Modifications :
+
+L’Utilisateur n’est pas autorisé à modifier, décompiler, désassembler ou effectuer une ingénierie inverse sur le Logiciel, en tout ou en partie.
+
+4. Exclusion de garantie :
+
+Le Logiciel est fourni "en l'état", sans aucune garantie de quelque nature que ce soit, explicite ou implicite, y compris, mais sans s'y limiter, les garanties de qualité marchande, d'adéquation à un usage particulier ou de non-contrefaçon. L'Auteur ne pourra en aucun cas être tenu responsable des dommages, directs ou indirects, y compris les dommages accessoires, consécutifs ou spéciaux, résultant de l'utilisation ou de l'incapacité à utiliser le Logiciel. En utilisant le Logiciel, l’Utilisateur reconnaît et accepte que le Logiciel est fourni "en l'état".
+
+5. Durée de protection :
+
+Le Logiciel est protégé par le droit d’auteur pour une durée de 70 ans à compter du décès de l’Auteur, conformément à la législation belge.
+
+6. Litiges :
+
+Tout litige relatif au présent accord sera soumis à la compétence exclusive des tribunaux belges compétents, conformément aux lois en vigueur en Belgique.
+
+
+Pour toute demande d’autorisation ou d’information complémentaire, veuillez contacter l’Auteur à l’adresse suivante : app.sencie@gmail.com
+
+
+Le présent accord constitue l'intégralité de l'accord entre l'Utilisateur et l'Auteur concernant l'utilisation du Logiciel et remplace tout accord antérieur.
+
+
+Fait à Boncelles (Belgique), 2025.
