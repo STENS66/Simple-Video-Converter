@@ -1,4 +1,4 @@
-SIMPLE-VIDEO-CONVERTER - END USER LICENSE AGREEMENT
+Simple-Video-Converter - END USER LICENSE AGREEMENT
 
 Copyright © Gaëtan Sencie 2025
 All Rights Reserved.
@@ -34,7 +34,7 @@ Done in Boncelles (Belgium), 2026.
 
 ========================================================================
 
-SIMPLE-VIDEO-CONVERTER - CONTRAT DE LICENCE UTILISATEUR FINAL
+Simple-Video-Converter - CONTRAT DE LICENCE UTILISATEUR FINAL
 
 Copyright © Gaëtan Sencie 2025
 Tous droits réservés.
