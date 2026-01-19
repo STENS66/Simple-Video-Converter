@@ -1,37 +1,40 @@
-# Privacy-Policy-Simle-Video-Converter
+# Privacy-Policy-Simple-Video-Converter
 
-Politique de confidentialité pour les différentes versions de l'application "**Simle-Video-Converter**".
-
+Politique de confidentialité pour l'application "**Simple-Video-Converter**".
 
 ## **Collecte de données**
 
-Notre application "**Simle-Video-Converter**" ne collecte ni ne transmet aucune donnée vers des serveurs distants ou sur Internet. 
-Toutes les informations saisies par l'utilisateur restent exclusivement sur l'appareil où l'application est installée.
+Notre application "**Simple-Video-Converter**" ne collecte ni ne transmet aucune donnée vers des serveurs distants ou sur Internet.
+Toutes les informations et fichiers traités par l'utilisateur restent exclusivement sur l'appareil où l'application est installée.
 
 ## **Utilisation des données**
 
-Les données saisies par l'utilisateur sont utilisées uniquement à des fins de traitement local sur l'appareil de l'utilisateur. 
-Elles sont stockées localement et ne sont jamais partagées avec des tiers.
+Les données (fichiers vidéo, logs, paramètres) sont utilisées uniquement à des fins de traitement local sur l'appareil de l'utilisateur.
+Elles sont stockées localement et ne sont jamais partagées avec des tiers par l'application elle-même.
+
+## **Composants Tiers (FFmpeg)**
+
+Cette application fonctionne comme une interface graphique pour le logiciel tiers **FFmpeg**.
+- **Mode par défaut :** L'application utilise une version interne de FFmpeg (conforme LGPL).
+- **Mode Système :** L'utilisateur peut choisir d'utiliser sa propre installation de FFmpeg déjà présente sur son système.
+
+Dans les deux cas, le traitement des vidéos s'effectue strictement en local. L'application transmet les commandes de traitement à FFmpeg sur votre machine, mais ne récupère aucune donnée personnelle issue de ce processus.
 
 ## **Partage des données**
 
-Nous ne partageons aucune donnée utilisateur avec des tiers. 
-Toutes les données restent strictement localisées sur l'appareil de l'utilisateur. 
-N'ayant aucun accès aux données saisies, consultées et enregistrées via ces applications, les utilisateurs sont donc les seuls responsables de la conservation et de l'utilisation de celles-ci.
+Nous ne partageons aucune donnée utilisateur avec des tiers.
+Toutes les données restent strictement localisées sur l'appareil de l'utilisateur.
+N'ayant aucun accès aux données saisies, consultées et enregistrées via cette application, les utilisateurs sont les seuls responsables de la conservation et de l'utilisation de celles-ci.
 
 ## **Sécurité des données**
 
-Lors de la création de ces applications, nous avons mis en œuvre toutes les mesures nécessaires pour garantir que toutes les données saisies, consultées ou enregistrées par les utilisateurs restent uniquement stockées localement sur leurs appareils. 
-Ces mesures incluent les protections offertes par le système d'exploitation et les fonctionnalités de sécurité standard de Microsoft. 
-De plus, lorsque quelqu'un télécharge une de nos applications ou consulte une page de notre dépôt sur GitHub, aucune donnée personnelle n'est collectée par défaut.
+Lors de la création de cette application, nous avons mis en œuvre les mesures nécessaires pour garantir que les données restent stockées localement.
+Ces mesures reposent sur les protections offertes par votre **système d'exploitation (Linux, Windows, etc.)** et ses fonctionnalités de sécurité standard (gestion des permissions, sandboxing Snap le cas échéant).
+De plus, aucune donnée personnelle n'est collectée par défaut lors du téléchargement ou de l'utilisation.
 
 ## **Droits des utilisateurs**
 
-Conformément à la réglementation en vigueur, vous avez le droit de : 
-- Accéder aux données que vous avez saisies dans l'application
-- Rectifier ou effacer les données que vous avez saisies dans l'application
-
-Veuillez noter que toutes les données restent exclusivement sur l'appareil où l'application est installée et ne sont jamais transmises ou collectées par nos services.
+Conformément à la réglementation en vigueur, vous avez le droit d'accéder, de rectifier ou d'effacer les données stockées localement par l'application (logs, fichiers de configuration) en accédant simplement aux dossiers de l'application sur votre machine.
 
 ## **Contact**
 
