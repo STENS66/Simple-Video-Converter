@@ -1,0 +1,231 @@
+name: simple-video-converter
+title: Simple-Video-Converter
+base: core24
+version: '1.3.0'
+summary: Convertisseur vidéo optimisé (NVIDIA/Intel/AMD) 100% hors ligne.
+icon: snap/gui/icon.png
+website: https://github.com/STENS66
+donation: https://link.trustwallet.com/send?coin=195&address=TTcyoteRToZjoYhtuKYQ14FWeq1wicKNrF
+contact: mailto:app.sencie@gmail.com
+issues: https://github.com/STENS66/Simple-Video-Converter/issues
+source-code: https://github.com/STENS66/Simple-Video-Converter
+license: Proprietary
+grade: stable
+confinement: classic
+
+description: |
+  Simple Video Converter est une interface graphique intuitive pour FFmpeg,
+  permettant de convertir facilement vos fichiers vidéo vers différents formats
+  (MKV, MP4, AVI, WebM). Il supporte l'accélération matérielle, la gestion
+  par lots, et offre des préréglages simples pour une utilisation immédiate.
+
+  Nouveautés v1.3 :
+  * Accélération Matérielle Totale : NVIDIA (NVENC) et Intel/AMD (VA-API).
+  * International : FR, EN, DE, ES, IT.
+  * Mode Classic : Permet l'injection de binaires FFmpeg externes.
+
+lint:
+  ignore:
+    - library:
+      # Ces librairies sont chargées dynamiquement par Qt ou Mesa, le linter ne voit pas de lien direct.
+      # Il est CRITIQUE de ne PAS les supprimer.
+      - usr/lib/**/libEGL_mesa.so*
+      - usr/lib/**/libGLX_mesa.so*
+      - usr/lib/**/libvulkan.so*
+      - usr/lib/**/libproxy.so*
+      # Libs système internes souvent faussement positives
+      - usr/lib/**/libcolordprivate.so*
+      - usr/lib/**/libdconf.so*
+
+apps:
+  simple-video-converter:
+    command: bin/launcher.sh
+    environment:
+      # En classic, on tente d'utiliser le thème GTK3 si disponible
+      QT_QPA_PLATFORMTHEME: gtk3
+
+parts:
+  # PARTIE 1 : Application + Launcher
+  my-app:
+    plugin: dump
+    source: ./build_nuitka_linux/main.dist/
+    organize:
+      "*": bin/
+    build-attributes:
+      - enable-patchelf
+    prime:
+      - bin/*
+      - "*"
+      # EXCLUSIONS pour nettoyer les avertissements "unused library" de libs vraiment inutiles
+      - "-bin/PySide6/qt-plugins/egldeviceintegrations"
+      - "-bin/PySide6/qt-plugins/platforms/libqeglfs.so"
+      - "-bin/PySide6/qt-plugins/platforms/libqlinuxfb.so"
+      - "-bin/PySide6/qt-plugins/platforms/libqminimal.so"
+      - "-bin/PySide6/qt-plugins/platforms/libqminimalegl.so"
+      - "-bin/PySide6/qt-plugins/platforms/libqvnc.so"
+
+  launcher:
+    plugin: dump
+    source: .
+    organize:
+      launcher.sh: bin/launcher.sh
+    prime:
+      - bin/launcher.sh
+    override-prime: |
+      craftctl default
+      chmod +x $CRAFT_PRIME/bin/launcher.sh
+
+  # PARTIE 2 : Dépendances Système
+  dependencies:
+    # On reste en 'nil' pour éviter de copier tout le source code (inefficace).
+    # On patche manuellement les ELF dans override-prime.
+    plugin: nil
+    build-packages:
+      - patchelf
+    stage-packages:
+      # --- Note sur FFmpeg ---
+      # FFmpeg est EXCLU volontairement pour éviter la distribution de composants GPL.
+      
+      # --- Mathématiques ---
+      - libblas3
+      - liblapack3
+      
+      # --- Graphisme de base (X11, GL, EGL) ---
+      - libx11-6
+      - libx11-xcb1  # ESSENTIEL
+      - libgl1
+      - libegl1
+      - libfontconfig1
+      
+      # --- Wayland ---
+      - libwayland-client0
+      - libwayland-cursor0
+      - libwayland-egl1
+      
+      # --- XCB (Support bas niveau X11) ---
+      - libxcb-cursor0
+      - libxcb-glx0    # ESSENTIEL OpenGL
+      - libxcb-icccm4
+      - libxcb-image0
+      - libxcb-keysyms1
+      - libxcb-randr0
+      - libxcb-render-util0
+      - libxcb-shape0
+      - libxcb-shm0
+      - libxcb-sync1
+      - libxcb-util1
+      - libxcb-xfixes0
+      - libxcb-xkb1
+      
+      # --- Clavier & Autres ---
+      - libxkbcommon-x11-0
+      - libatomic1
+      
+      # --- Thèmes, Impression & Intégration ---
+      - libgtk-3-0
+      - libgdk-pixbuf-2.0-0
+      - libcairo2
+      - libpango-1.0-0
+      - libcups2
+      
+      # --- Réseau/Proxy ---
+      - libproxy1v5
+
+    # PATCHELF MANUEL BASH - VERSION DYNAMIQUE RELATIVE (CORRIGÉE)
+    override-prime: |
+      craftctl default
+      set -e
+      
+      echo "=== STARTING DYNAMIC PATCHELF SCRIPT ==="
+      chmod -R u+w $CRAFT_PRIME || true
+      
+      SNAP_BASE="/snap/core24/current/lib/x86_64-linux-gnu"
+      INTERP="/snap/core24/current/lib64/ld-linux-x86-64.so.2"
+      
+      # Cibles Absolues
+      ABS_LIB="$CRAFT_PRIME/usr/lib/x86_64-linux-gnu"
+      ABS_ROOT_BIN="$CRAFT_PRIME/bin"
+      ABS_USR_BIN="$CRAFT_PRIME/usr/bin"
+      
+      # Fonction de patch unitaire avec calcul relatif
+      patch_elf() {
+          local file="$1"
+          local is_bin="$2"
+          # CORRECTION ICI: ${3:-} empêche le crash si l'argument est manquant
+          local extra_rpath="${3:-}"
+          
+          # Calcul des chemins relatifs
+          local dir=$(dirname "$file")
+          local rel_lib=$(realpath --relative-to="$dir" "$ABS_LIB")
+          local rel_root_bin=$(realpath --relative-to="$dir" "$ABS_ROOT_BIN")
+          local rel_usr_bin=$(realpath --relative-to="$dir" "$ABS_USR_BIN")
+          
+          # Construction du RPATH complet (Linter-friendly)
+          local rpath="\$ORIGIN:\$ORIGIN/..:\$ORIGIN/$rel_lib:\$ORIGIN/$rel_root_bin:\$ORIGIN/$rel_usr_bin:$SNAP_BASE"
+          
+          if [ -n "$extra_rpath" ]; then
+              rpath="$extra_rpath:$rpath"
+          fi
+
+          local cmd="patchelf --force-rpath --set-rpath '$rpath'"
+          if [ "$is_bin" = "true" ]; then
+              cmd="$cmd --set-interpreter '$INTERP'"
+          fi
+          cmd="$cmd '$file'"
+          
+          # Exécution
+          eval "$cmd" || echo "WARNING: Failed to patch $file"
+      }
+      export -f patch_elf
+      export SNAP_BASE INTERP ABS_LIB ABS_ROOT_BIN ABS_USR_BIN CRAFT_PRIME
+
+      # 1. Patch Binaries (usr/bin, usr/sbin, usr/libexec)
+      echo "Patching binaries..."
+      find "$CRAFT_PRIME/usr/bin" "$CRAFT_PRIME/usr/sbin" "$CRAFT_PRIME/usr/libexec" -type f 2>/dev/null | while read f; do
+          # Check ELF magic
+          if head -c 4 "$f" | grep -q $'\x7fELF'; then
+              # CORRECTION ICI: Ajout du 3ème argument vide pour être explicite
+              patch_elf "$f" "true" ""
+          fi
+      done
+
+      # 2. Patch Libraries (usr/lib recursively)
+      echo "Patching libraries..."
+      find "$CRAFT_PRIME/usr/lib" -type f \( -name "*.so*" -o -perm /111 \) | while read f; do
+          # Skip si lien symbolique
+          if head -c 4 "$f" | grep -q $'\x7fELF'; then
+              
+              fname=$(basename "$f")
+              is_bin="false"
+              extra_rpath=""
+
+              # Gestion des exceptions chirurgicales
+              case "$fname" in
+                  gdk-pixbuf-query-loaders|gtk-query-immodules-3.0)
+                      is_bin="true"
+                      ;;
+                  liblapack.so*)
+                      extra_rpath="\$ORIGIN/../blas"
+                      ;;
+                  libproxy.so*)
+                      extra_rpath="\$ORIGIN/libproxy"
+                      ;;
+              esac
+
+              patch_elf "$f" "$is_bin" "$extra_rpath"
+          fi
+      done
+
+      echo "=== PATCHING COMPLETE ==="
+
+    prime:
+      - usr/*
+      - lib/*
+      - etc/*
+      - var/*
+      - "-usr/lib/*/librsvg*"
+      - "-usr/lib/*/libicuio.so*"
+      - "-usr/lib/*/libicutest.so*"
+      - "-usr/lib/*/libicutu.so*"
+      - "-usr/lib/*/libicui18n.so*"
+      - "-usr/lib/*/libXxf86vm.so*"
