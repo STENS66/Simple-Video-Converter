@@ -1,4 +1,50 @@
-# Privacy-Policy-Simple-Video-Converter
+# Privacy Policy - Simple Video Converter
+
+Privacy Policy for the application "**Simple-Video-Converter**".
+
+## **Data Collection**
+
+Our application "**Simple-Video-Converter**" does not collect or transmit any data to remote servers or over the Internet.
+All information and files processed by the user remain exclusively on the device where the application is installed.
+
+## **Data Usage**
+
+Data (video files, logs, settings) are used solely for local processing purposes on the user's device.
+They are stored locally and are never shared with third parties by the application itself.
+
+## **Third-Party Components (FFmpeg)**
+
+This application functions as a graphical interface for the third-party software **FFmpeg**.
+- **Default Mode:** The application uses an internal version of FFmpeg (LGPL compliant).
+- **System Mode:** The user may choose to use their own installation of FFmpeg already present on their system.
+
+In both cases, video processing is performed strictly locally. The application transmits processing commands to FFmpeg on your machine but does not retrieve any personal data resulting from this process.
+
+## **Data Sharing**
+
+We do not share any user data with third parties.
+All data remains strictly localized on the user's device.
+As we have no access to data entered, viewed, or saved via this application, users are solely responsible for their storage and usage.
+
+## **Data Security**
+
+During the creation of this application, we implemented necessary measures to ensure data remains stored locally.
+These measures rely on the protections offered by your operating system and its standard security features.
+Furthermore, no personal data is collected by default upon download or usage.
+
+## **User Rights**
+
+In accordance with applicable regulations, you have the right to access, rectify, or erase data stored locally by the application (logs, configuration files) by simply accessing the application folders on your machine.
+
+## **Contact**
+
+For any questions or requests regarding the privacy of your data, you can contact us at the following address:
+
+**E-mail:** app.sencie@gmail.com
+
+---
+
+# Politique de confidentialité (Français)
 
 Politique de confidentialité pour l'application "**Simple-Video-Converter**".
 
@@ -29,7 +75,7 @@ N'ayant aucun accès aux données saisies, consultées et enregistrées via cett
 ## **Sécurité des données**
 
 Lors de la création de cette application, nous avons mis en œuvre les mesures nécessaires pour garantir que les données restent stockées localement.
-Ces mesures reposent sur les protections offertes par votre **système d'exploitation (Linux, Windows, etc.)** et ses fonctionnalités de sécurité standard (gestion des permissions, sandboxing Snap le cas échéant).
+Ces mesures reposent sur les protections offertes par votre système d'exploitation et ses fonctionnalités de sécurité standard.
 De plus, aucune donnée personnelle n'est collectée par défaut lors du téléchargement ou de l'utilisation.
 
 ## **Droits des utilisateurs**
