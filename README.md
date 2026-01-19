@@ -1,177 +1,289 @@
-# Simple-Video-Converter - Version 1.2
-**Disponible officiellement sur le Microsoft Store**
+# Simple-Video-Converter - Version 1.3
+**Available on Microsoft Store (Windows) • Coming soon to Snap Store (Linux)**
 
 # Copyright © Gaëtan Sencie 2025
+# All Rights Reserved.
 
-# Tous droits réservés.
+---
+**[English Version below - Version Française plus bas]**
 
-
+---
 
 ## Description
 
+"**Simple-Video-Converter**" is a **high-performance**, **secure**, and cross-platform desktop application designed to simplify the video file conversion process. Leveraging the power of FFmpeg and FFprobe in the background, it provides an efficient solution to convert your videos between various formats, with quality and performance options tailored to your needs.
 
+This **version 1.3** marks a major milestone with the arrival of **Linux (Ubuntu) support** and numerous improvements to enrich the user experience, including advanced hardware detection and AV1 codec support.
 
-"**Simple-Video-Converter**" est une application de bureau **performante** et **sécurisée** conçue pour simplifier le processus de conversion de fichiers vidéo. Utilisant la puissance de FFmpeg et FFprobe en arrière-plan, elle offre une solution efficace pour convertir vos vidéos entre différents formats, avec des options de qualité et de performance adaptées à vos besoins.
+It operates exclusively **locally** on the user's computer, ensuring **maximum privacy**. Validated and published on the **Microsoft Store** and **Snap Store**, it features a robust architecture, a modern interface, and advanced features like **batch processing**.
 
-Elle fonctionne exclusivement **en local** sur l’ordinateur de l’utilisateur, garantissant ainsi une **confidentialité maximale**.  
-Validée et publiée sur le **Microsoft Store**, elle offre une architecture robuste, une interface moderne et des fonctionnalités avancées comme le **traitement par lots**.
+## Preview
+
+![Screenshot of Simple-Video-Converter application](https://github.com/STENS66/Simple-Video-Converter/blob/main/images/window.png?raw=true)
+
+![Screenshot of Simple-Video-Converter application](https://github.com/STENS66/Simple-Video-Converter/blob/main/images/darkmode.png?raw=true)
+
+![Screenshot of Simple-Video-Converter application](https://github.com/STENS66/Simple-Video-Converter/blob/main/images/neonmode.png?raw=true)
+
+### Compatibility
+
+Desktop application designed for:
+* **Windows**: 10 and 11 (64-bit).
+* **Linux**: Coming soon via **Snap** package (Ubuntu and compatible distributions).
+
+## Features
+
+The "**Simple-Video-Converter**" application offers a clear user interface and robust features for a complete video conversion experience.
+
+**Interface Language Selection**:
+* Choose between **French**, **English**, **German**, and now **Spanish** and **Italian** via the "Languages" tab in the menu bar.
+
+**Flexible File Adding**:
+* Easily drag and drop your video files directly into the dedicated area.
+* Manually select one or multiple files via a user-friendly dialog box.
+
+**Conversion List Management**:
+* View all added files in a detailed table displaying name, duration, size, and status.
+* Reorder files in the list for precise sequential processing.
+* Remove unwanted files from the list before conversion.
+
+**Customizable Output Options**:
+* **Output Directory**: Easily choose the folder where your converted videos will be saved.
+* **Output Formats**: Convert your videos to popular formats such as MKV, MP4, AVI, and WebM.
+
+**Advanced Video Control & Hardware**:
+* **Advanced Hardware Detection**: The application automatically identifies available hardware (NVIDIA GPU, AMD, Intel) and adapts encoding options accordingly.
+* **Video Codecs**: Extensive support including H.264, HEVC, VP9, Xvid, and the addition of **AV1 support** (for compatible hardware).
+* **Dynamic Codec Management**: Smart detection of available codecs based on the FFmpeg version (embedded or GPL).
+* **Video Quality**: Adjust quality with the Constant Rate Factor (CRF) or define a specific bitrate.
+* **Encoding Presets**: Apply presets (ultrafast, medium, veryslow, etc.) to balance speed and file size.
+* **Resolution**: Resize your videos (1080p, 720p, etc.) or define a custom resolution.
+
+**Audio Options**:
+* **Audio Codecs**: Select the desired codec (AAC, MP3, Opus, Vorbis) or copy the original stream.
+* **Audio Bitrate**: Define a specific bitrate to control sound quality.
+
+**File Conflict Management**:
+* Choose automatic action: ask, overwrite, skip, or rename the new file.
+
+**Automation and Convenience**:
+* **Settings Persistence**: Your preferences (sliders, positions, themes) are saved and restored between sessions.
+* Option to delete original files after success.
+* Option to open the output folder upon completion.
+
+**Real-Time Monitoring**:
+* Progress bar and real-time status updates.
+* **Enhanced Log Management**: Built-in event log for better tracking of operations and debugging.
+
+### Enhanced User Experience
+* **Smart Settings**: To avoid errors, the application offers pre-configured settings and value ranges adapted to each codec.
+* **Visual Themes**: Customize your experience with 4 themes: **Light** (default), **Dark**, and the new **Neon** and **Cyberpunk** themes.
+* **Intuitive Guidance**: Explanatory tooltips on every option.
+* **Fixes**: Improved interface and text for clarity and stability.
+
+## Licenses and FFmpeg Codecs
+
+For licensing reasons, the application embeds a version of FFmpeg including only **LGPL** licensed codecs. This ensures free distribution on Stores.
+However, some popular codecs (H.264, HEVC) are under **GPL** license and are not included by default.
+
+The application will detect missing codecs. Here is how to enable full support (GPL Builds) depending on your system:
+
+### On Windows
+
+1. Download an FFmpeg version including GPL codecs (e.g., "ffmpeg-7.1.1-essentials_build" or "full_build"). We recommend [gyan.dev](https://www.gyan.dev/ffmpeg/builds/).
+2. Unzip the archive.
+3. In the application, go to `Configuration > Configure FFmpeg/FFprobe paths...`.
+4. Point to the location of your `ffmpeg.exe` and `ffprobe.exe` files.
+5. Restart the application.
+
+### On Linux (Ubuntu)
+
+You have two methods to choose from:
+
+**Method 1: System Installation (Recommended)**
+
+sudo apt install ffmpeg
+
+Then, simply restart **Simple-Video-Converter**. The application will automatically detect the installed system version and unlock the codecs.
+
+**Method 2: Manual Binaries**
+
+If you prefer to use a specific manually downloaded version:
+
+1. Download FFmpeg binaries for Linux (e.g., static builds).
+2. In the application, go to the `Configuration` tab.
+3. Select the downloaded binary files.
+4. Restart the application.
+
+## Target Audience
+
+This program is intended for a wide audience, from casual users to content creators on **Windows and Linux**. It is ideal for those looking for a quick solution to adapt their video files without complex settings. Support for hardware acceleration and the **AV1** codec makes it particularly performant on modern systems.
+
+**Security Benefits**:
+* "**Simple-Video-Converter**" offers total security and privacy.
+* **Offline Operation**: No Internet connection required to convert.
+* **Data Protection**: Your videos stay on your hard drive; no cloud uploads.
+* **Independence**: Standalone, with no dependence on third-party services.
+
+## Download
+
+- [Microsoft Store (Windows 10/11)](https://apps.microsoft.com/detail/9P990VQJTRTK?hl=en-us&gl=US)
+- [Snap Store (Ubuntu / Linux)] --> Validation in progress (Coming soon)
+- [GitHub Releases](https://github.com/STENS66/Simple-Video-Converter/releases)
+
+## Contact
+
+- Email: app.sencie@gmail.com
+- LinkedIn: [Gaëtan Sencie](https://www.linkedin.com/in/ga%C3%ABtan-sencie-applications-python)
+- GitHub: [STENS66](https://github.com/STENS66)
+
+Thank you for using "**Simple-Video-Converter**"!
+
+---
+
+## References & Keywords
+
+Developed by **Gaëtan Sencie**, Python developer.
+
+**Simple-Video-Converter** is officially available on the **Microsoft Store**, **GitHub**, and soon on the **Snap Store**, ensuring reliable and validated distribution.
+
+**Keywords**: video conversion, FFmpeg, FFprobe, privacy, offline application, data security, hardware acceleration, NVENC, Quick Sync, AMF, video codecs, AV1, MKV, MP4, AVI, WebM, Windows 10, Windows 11, Linux, Ubuntu, Snap Store, Python, GUI.
+
+---
+
+# Simple-Video-Converter - Version 1.3
+**Disponible sur le Microsoft Store (Windows) • Bientôt sur le Snap Store (Linux)**
+
+# Copyright © Gaëtan Sencie 2025
+# Tous droits réservés.
+
+## Description
+
+"**Simple-Video-Converter**" est une application de bureau **performante**, **sécurisée** et multiplateforme conçue pour simplifier le processus de conversion de fichiers vidéo. Utilisant la puissance de FFmpeg et FFprobe en arrière-plan, elle offre une solution efficace pour convertir vos vidéos entre différents formats, avec des options de qualité et de performance adaptées à vos besoins.
+
+Cette **version 1.3** marque une étape majeure avec l'arrivée du **support Linux (Ubuntu)** et de nombreuses améliorations pour enrichir l'expérience utilisateur, incluant une détection matérielle avancée et le support du codec AV1.
+
+Elle fonctionne exclusivement **en local** sur l’ordinateur de l’utilisateur, garantissant ainsi une **confidentialité maximale**. Validée et publiée sur le **Microsoft Store** et le **Snap Store**, elle offre une architecture robuste, une interface moderne et des fonctionnalités avancées comme le **traitement par lots**.
 
 ## Prévisualisation
 
 ![Capture d'écran de l'application Simple-Video-Converter](https://github.com/STENS66/Simple-Video-Converter/blob/main/images/window.png?raw=true)
 
-
 ![Capture d'écran de l'application Simple-Video-Converter](https://github.com/STENS66/Simple-Video-Converter/blob/main/images/darkmode.png?raw=true)
+
+![Capture d'écran de l'application Simple-Video-Converter](https://github.com/STENS66/Simple-Video-Converter/blob/main/images/neonmode.png?raw=true)
 
 ### Compatibilité
 
-
-Application de bureau conçue pour Windows 10 et 11 (64 bits).
-
+Application de bureau conçue pour :
+* **Windows** : 10 et 11 (64 bits).
+* **Linux** : Bientôt disponible via paquet **Snap** (Ubuntu et distributions compatibles).
 
 ## Fonctionnalités
 
-
-
 L'application "**Simple-Video-Converter**" propose une interface utilisateur claire et des fonctionnalités robustes pour une expérience de conversion vidéo complète.
 
-
-
 **Choix des langues de l'interface**:
-
-
-*  Choisissez entre le français, l'anglais et l'allemand via l'onglet "Langues" dans la barre de menu.
-
-
+* Choisissez entre le **Français**, l'**Anglais**, l'**Allemand**, et désormais l'**Espagnol** et l'**Italien** via l'onglet "Langues" dans la barre de menu.
 
 **Ajout de fichiers flexible** :
-
-
-
 * Glissez-déposez facilement vos fichiers vidéo directement dans la zone dédiée.
 * Sélectionnez manuellement un ou plusieurs fichiers via une boîte de dialogue conviviale.
 
-
-
 **Gestion de la liste de conversion** :
-
-
-
 * Visualisez tous les fichiers ajoutés dans un tableau détaillé affichant le nom, la durée, la taille et le statut.
 * Réorganisez l'ordre des fichiers dans la liste pour un traitement séquentiel précis.
 * Supprimez les fichiers indésirables de la liste avant la conversion.
 
-
-
 **Options de sortie personnalisables** :
+* **Répertoire de sortie** : Choisissez facilement le dossier où vos vidéos converties seront sauvegardées.
+* **Formats de sortie** : Convertissez vos vidéos vers les formats populaires tels que MKV, MP4, AVI et WebM.
 
-
-
-* Répertoire de sortie : Choisissez facilement le dossier où vos vidéos converties seront sauvegardées.
-* Formats de sortie : Convertissez vos vidéos vers les formats populaires tels que MKV, MP4, AVI et WebM.
-
-
-
-**Contrôle avancé de la vidéo** :
-
-
-
-* Accélération matérielle : Détection et utilisation des encodeurs matériels disponibles (NVIDIA NVENC, Intel Quick Sync, AMD AMF) pour des conversions ultra-rapides.
-* Codecs vidéo : Choisissez parmi une gamme de codecs vidéo (H.264/libx264, HEVC/libx265, VP9/libvpx-vp9, Xvid/libxvid) en fonction de l'encodeur sélectionné et du format de sortie.
-* Qualité vidéo : Ajustez la qualité de la vidéo avec le facteur de qualité constant (CRF) pour les codecs H.264/HEVC, ou définissez un bitrate vidéo spécifique pour d'autres codecs (ex: VP9).
-* Presets d'encodage : Appliquez des presets x264/x265 (ultrafast, medium, veryslow, etc.) pour équilibrer la vitesse de conversion et la taille du fichier.
-* Résolution : Redimensionnez vos vidéos à des résolutions prédéfinies (1080p, 720p, etc.) ou définissez une résolution personnalisée.
-
-
+**Contrôle avancé de la vidéo & Hardware** :
+* **Détection Hardware Avancée** : L'application identifie automatiquement le matériel disponible (GPU NVIDIA, AMD, Intel) et adapte les options d'encodage en conséquence.
+* **Codecs vidéo** : Support étendu incluant H.264, HEVC, VP9, Xvid et l'ajout du **support AV1** (pour les matériels compatibles).
+* **Gestion dynamique des codecs** : Détection intelligente des codecs disponibles selon la version de FFmpeg (embarquée ou GPL).
+* **Qualité vidéo** : Ajustez la qualité avec le facteur de qualité constant (CRF) ou définissez un bitrate spécifique.
+* **Presets d'encodage** : Appliquez des presets (ultrafast, medium, veryslow, etc.) pour équilibrer vitesse et taille.
+* **Résolution** : Redimensionnez vos vidéos (1080p, 720p, etc.) ou définissez une résolution personnalisée.
 
 **Options audio** :
-
-
-
-Codecs audio : Sélectionnez le codec audio désiré (AAC, MP3, Opus, Vorbis) ou choisissez de copier le flux audio original sans re-encodage.
-
-Bitrate audio : Définissez un bitrate audio spécifique pour contrôler la qualité du son.
-
-
+* **Codecs audio** : Sélectionnez le codec désiré (AAC, MP3, Opus, Vorbis) ou copiez le flux original.
+* **Bitrate audio** : Définissez un bitrate spécifique pour contrôler la qualité du son.
 
 **Gestion des conflits de fichiers** :
-
-
-
-* Choisissez l'action à entreprendre si un fichier de sortie existe déjà : demander à l'utilisateur, écraser, ignorer ou renommer automatiquement le nouveau fichier.
-
-
+* Choisissez l'action automatique : demander, écraser, ignorer ou renommer le nouveau fichier.
 
 **Automatisation et commodité** :
-
-
-
-* Option de supprimer les fichiers originaux après une conversion réussie pour économiser de l'espace.
-* Option d'ouvrir automatiquement le dossier de sortie une fois toutes les conversions terminées.
-
-
+* **Persistence des réglages** : Vos préférences (sliders, positions, thèmes) sont sauvegardées et restaurées entre les sessions.
+* Option de supprimer les fichiers originaux après succès.
+* Option d'ouvrir le dossier de sortie à la fin.
 
 **Suivi en temps réel** :
-
-
-
-* Une barre de progression détaillée et des mises à jour de statut en temps réel pour chaque fichier et pour la progression globale de la conversion.
-* Un journal des événements intégré affiche toutes les opérations et les messages importants de FFmpeg.
-
-
+* Barre de progression et statuts en temps réel.
+* **Gestion des logs améliorée** : Journal des événements intégré pour un meilleur suivi des opérations et du débogage.
 
 ### Expérience Utilisateur Améliorée
-
-*   **Réglages Intelligents** : Pour éviter les erreurs et garantir des conversions de qualité, l'application propose des réglages pré-configurés et des plages de valeurs (sliders) adaptées à chaque codec. Cela réduit le risque de choisir des paramètres incompatibles et assure un résultat optimal sans nécessiter de connaissances techniques approfondies.
-*   **Thèmes Visuels** : Personnalisez votre expérience avec un thème par défaut (clair) et un thème sombre, accessibles depuis le menu pour un meilleur confort visuel.
-*   **Guidage Intuitif** : Chaque option, même la plus complexe, est accompagnée d'une info-bulle (tooltip) explicative. Passez simplement la souris sur un réglage pour comprendre son utilité et son impact sur la conversion.
-
+* **Réglages Intelligents** : Pour éviter les erreurs, l'application propose des réglages pré-configurés et des plages de valeurs adaptées à chaque codec.
+* **Thèmes Visuels** : Personnalisez votre expérience avec 4 thèmes : **Clair** (défaut), **Sombre**, et les nouveaux thèmes **Neon** et **Cyberpunk**.
+* **Guidage Intuitif** : Info-bulles (tooltips) explicatives sur chaque option.
+* **Corrections** : Interface et textes améliorés pour plus de clarté et de stabilité.
 
 ## Licences et Codecs FFmpeg
 
-Pour des raisons de licence, l'application embarque une version de FFmpeg qui inclut uniquement des codecs sous licence **LGPL**. Cela garantit que le logiciel peut être distribué librement.
+Pour des raisons de licence, l'application embarque une version de FFmpeg incluant uniquement des codecs sous licence **LGPL**. Cela garantit une distribution libre sur les Stores.
+Cependant, certains codecs populaires (H.264, HEVC) sont sous licence **GPL** et ne sont pas inclus par défaut.
 
-Cependant, certains codecs très populaires comme le **H.264 (libx264)** et le **HEVC (libx265)** sont sous licence **GPL**, et ne peuvent donc pas être inclus par défaut.
+L'application détectera les codecs manquants. Voici comment activer la prise en charge complète (Builds GPL) selon votre système :
 
-**Pour activer la prise en charge de tous les codecs :**
+### Sur Windows
 
-1.  L'application détectera si ces codecs sont manquants et vous en informera.
-2.  Vous devrez télécharger vous-même une version de FFmpeg incluant les codecs GPL. Nous recommandons les builds "essentials" ou "full" disponibles sur des sites de confiance comme [gyan.dev](https://www.gyan.dev/ffmpeg/builds/).
-3.  Une fois le fichier téléchargé et décompressé, utilisez l'option dans le menu `Configuration > Configurer les chemins FFmpeg/FFprobe...` pour indiquer à l'application où se trouvent les nouveaux fichiers `ffmpeg.exe` et `ffprobe.exe`.
-4.  Après un redémarrage, l'application reconnaîtra les nouveaux codecs et vous offrira toutes ses fonctionnalités.
+1. Téléchargez une version de FFmpeg incluant les codecs GPL (ex: "ffmpeg-7.1.1-essentials_build" ou "full_build"). Nous recommandons [gyan.dev](https://www.gyan.dev/ffmpeg/builds/).
+2. Décompressez l'archive.
+3. Dans l'application, allez dans `Configuration > Configurer les chemins FFmpeg/FFprobe...`.
+4. Indiquez l'emplacement de vos fichiers `ffmpeg.exe` et `ffprobe.exe`.
+5. Redémarrez l'application.
 
+### Sur Linux (Ubuntu)
 
+Vous avez deux méthodes au choix :
 
-### Public Cible
+**Méthode 1 : Installation système (Recommandée)**
 
+sudo apt install ffmpeg
 
+Ensuite, redémarrez simplement **Simple-Video-Converter**. L'application détectera automatiquement la version système installée et débloquera les codecs.
 
-Ce programme est destiné à un large public, des utilisateurs occasionnels aux créateurs de contenu qui ont besoin d'un outil simple et efficace pour convertir des vidéos. Il est idéal pour ceux qui recherchent une solution rapide et sans tracas pour adapter leurs fichiers vidéo à différentes plateformes ou appareils, sans avoir à naviguer dans des paramètres complexes. La prise en charge de l'accélération matérielle le rend particulièrement utile pour les utilisateurs souhaitant des conversions rapides sur des systèmes compatibles.
+**Méthode 2 : Binaires manuels**
 
+Si vous préférez utiliser une version spécifique téléchargée manuellement :
 
+1. Téléchargez les binaires FFmpeg pour Linux (ex: builds statiques).
+2. Dans l'application, allez dans l'onglet `Configuration`.
+3. Sélectionnez les fichiers binaires téléchargés.
+4. Redémarrez l'application.
+
+## Public Cible
+
+Ce programme est destiné à un large public, des utilisateurs occasionnels aux créateurs de contenu sur **Windows et Linux**. Il est idéal pour ceux qui recherchent une solution rapide pour adapter leurs fichiers vidéo sans paramètres complexes. La prise en charge de l'accélération matérielle et du codec **AV1** le rend particulièrement performant sur les systèmes modernes.
 
 **Avantages en termes de sécurité**:
 
-
-
-* "**Simple-Video-Converter**" offre des avantages significatifs en matière de sécurité et de confidentialité :
-* **Fonctionnement hors ligne** : L'application fonctionne entièrement hors ligne. Elle ne nécessite aucune connexion Internet pour effectuer les conversions.
-* **Protection des données** : Vos fichiers vidéo restent sur votre ordinateur et ne sont jamais téléchargés vers un serveur externe. Cela garantit une confidentialité maximale de vos données personnelles et sensibles.
-* **Indépendance** : L'application est autonome et ne dépend d'aucun service cloud, réduisant ainsi les risques liés aux violations de données ou aux interruptions de service en ligne.
-
-
+* "**Simple-Video-Converter**" offre une sécurité et une confidentialité totales.
+* **Fonctionnement hors ligne** : Aucune connexion Internet requise pour convertir.
+* **Protection des données** : Vos vidéos restent sur votre disque dur ; aucun upload vers le cloud.
+* **Indépendance** : Autonome, sans dépendance à des services tiers.
 
 ## Téléchargement
 
-- [Microsoft Store (version officielle validée)](https://apps.microsoft.com/detail/9P990VQJTRTK?hl=fr-be&gl=BE&ocid=pdpshare)  
-- [Releases GitHub (versions alternatives)](https://github.com/STENS66/Simple-Video-Converter/releases)
-
-
+- [Microsoft Store (Windows 10/11)](https://apps.microsoft.com/detail/9P990VQJTRTK?hl=fr-be&gl=BE&ocid=pdpshare)
+- [Snap Store (Ubuntu / Linux)] --> en cours de validation (bientôt disponible)
+- [Releases GitHub](https://github.com/STENS66/Simple-Video-Converter/releases)
 
 ## Contact
 
-- Email : app.sencie@gmail.com  
-- LinkedIn : [Gaëtan Sencie](https://www.linkedin.com/in/ga%C3%ABtan-sencie-applications-python)  
+- Email : app.sencie@gmail.com
+- LinkedIn : [Gaëtan Sencie](https://www.linkedin.com/in/ga%C3%ABtan-sencie-applications-python)
 - GitHub : [STENS66](https://github.com/STENS66)
 
 Merci d'utiliser "**Simple-Video-Converter**" !
@@ -180,10 +292,8 @@ Merci d'utiliser "**Simple-Video-Converter**" !
 
 ## Références & Mots-clés
 
-Développé par **Gaëtan Sencie**, développeur Python.  
-  
-**Simple-Video-Converter** est officiellement disponible sur le **Microsoft Store** et sur **GitHub**, garantissant une diffusion fiable et validée.
+Développé par **Gaëtan Sencie**, développeur Python.
 
-**Mots-clés** : conversion vidéo, FFmpeg, FFprobe, confidentialité, application hors ligne, sécurité des données, accélération matérielle, NVENC, Quick Sync, AMF, codecs vidéo, MKV, MP4, AVI, WebM, Windows 10, Windows 11.
+**Simple-Video-Converter** est officiellement disponible sur le **Microsoft Store**, **GitHub** et bientôt sur le **Snap Store**, garantissant une diffusion fiable et validée.
 
-
+**Mots-clés** : conversion vidéo, FFmpeg, FFprobe, confidentialité, application hors ligne, sécurité des données, accélération matérielle, NVENC, Quick Sync, AMF, codecs vidéo, AV1, MKV, MP4, AVI, WebM, Windows 10, Windows 11, Linux, Ubuntu, Snap Store, Python, GUI.
