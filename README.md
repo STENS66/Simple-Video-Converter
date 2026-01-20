@@ -98,22 +98,15 @@ The application will detect missing codecs. Here is how to enable full support (
 
 ### On Linux (Ubuntu)
 
-You have two methods to choose from:
+**Plug & Play Experience:**
+The Linux version (Snap) comes **pre-bundled with FFmpeg**.
+Unlike the Windows version, you do **not** need to install FFmpeg manually or configure paths. It works immediately after installation.
 
-**Method 1: System Installation (Recommended)**
+**⚠️ Note on External Drives (USB/SD):**
+Because the application runs in a secure sandbox ("Strict confinement"), it cannot access your external drives by default. If your videos are stored on a USB stick or a secondary hard drive, you must grant permission by running this command once:
 
-sudo apt install ffmpeg
-
-Then, simply restart **Simple-Video-Converter**. The application will automatically detect the installed system version and unlock the codecs.
-
-**Method 2: Manual Binaries**
-
-If you prefer to use a specific manually downloaded version:
-
-1. Download FFmpeg binaries for Linux (e.g., static builds).
-2. In the application, go to the `Configuration` tab.
-3. Select the downloaded binary files.
-4. Restart the application.
+```bash
+sudo snap connect simple-video-converter:removable-media
 
 ## Target Audience
 
@@ -246,22 +239,15 @@ L'application détectera les codecs manquants. Voici comment activer la prise en
 
 ### Sur Linux (Ubuntu)
 
-Vous avez deux méthodes au choix :
+**Expérience Plug & Play :**
+La version Linux (Snap) est **fournie avec FFmpeg préinstallé**.
+Contrairement à la version Windows, vous n'avez **pas** besoin d'installer FFmpeg manuellement ni de configurer les chemins d'accès. L'application fonctionne immédiatement après l'installation.
 
-**Méthode 1 : Installation système (Recommandée)**
+**⚠️ Remarque concernant les disques externes (USB/SD) :**
+Comme l'application s'exécute dans un environnement sécurisé (« Strict confinement »), elle ne peut pas accéder à vos disques externes par défaut. Si vos vidéos sont stockées sur une clé USB ou un disque dur secondaire, vous devez accorder la permission en exécutant cette commande une seule fois :
 
-sudo apt install ffmpeg
-
-Ensuite, redémarrez simplement **Simple-Video-Converter**. L'application détectera automatiquement la version système installée et débloquera les codecs.
-
-**Méthode 2 : Binaires manuels**
-
-Si vous préférez utiliser une version spécifique téléchargée manuellement :
-
-1. Téléchargez les binaires FFmpeg pour Linux (ex: builds statiques).
-2. Dans l'application, allez dans l'onglet `Configuration`.
-3. Sélectionnez les fichiers binaires téléchargés.
-4. Redémarrez l'application.
+```bash
+sudo snap connect simple-video-converter:removable-media
 
 ## Public Cible
 
