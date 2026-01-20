@@ -99,8 +99,8 @@ The application will detect missing codecs. Here is how to enable full support (
 ### On Linux (Ubuntu)
 
 **Plug & Play Experience:**
-The Linux version (Snap) comes **pre-bundled with FFmpeg**.
-Unlike the Windows version, you do **not** need to install FFmpeg manually or configure paths. It works immediately after installation.
+The Linux version (Snap) comes **pre-bundled with FFmpeg** (static binary).
+Unlike the Windows version, configuration is fully automatic: the "Configuration" menu for selecting FFmpeg is disabled as the application handles everything itself.
 
 **⚠️ Note on External Drives (USB/SD):**
 Because the application runs in a secure sandbox ("Strict confinement"), it cannot access your external drives by default. If your videos are stored on a USB stick or a secondary hard drive, you must grant permission by running this command once:
@@ -239,8 +239,8 @@ L'application détectera les codecs manquants. Voici comment activer la prise en
 ### Sur Linux (Ubuntu)
 
 **Expérience Plug & Play :**
-La version Linux (Snap) est **fournie avec FFmpeg préinstallé**.
-Contrairement à la version Windows, vous n'avez **pas** besoin d'installer FFmpeg manuellement ni de configurer les chemins d'accès. L'application fonctionne immédiatement après l'installation.
+La version Linux (Snap) est **fournie avec FFmpeg préinstallé** (binaire statique).
+Contrairement à la version Windows, la configuration est entièrement automatique : le menu de sélection de FFmpeg, nommé "Configuration", est désactivé car l'application gère tout elle-même.
 
 **⚠️ Remarque concernant les disques externes (USB/SD) :**
 Comme l'application s'exécute dans un environnement sécurisé (« Strict confinement »), elle ne peut pas accéder à vos disques externes par défaut. Si vos vidéos sont stockées sur une clé USB ou un disque dur secondaire, vous devez accorder la permission en exécutant cette commande une seule fois :
