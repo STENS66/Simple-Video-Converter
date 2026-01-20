@@ -105,7 +105,6 @@ Unlike the Windows version, you do **not** need to install FFmpeg manually or co
 **⚠️ Note on External Drives (USB/SD):**
 Because the application runs in a secure sandbox ("Strict confinement"), it cannot access your external drives by default. If your videos are stored on a USB stick or a secondary hard drive, you must grant permission by running this command once:
 
-```bash
 sudo snap connect simple-video-converter:removable-media
 
 ## Target Audience
@@ -246,7 +245,6 @@ Contrairement à la version Windows, vous n'avez **pas** besoin d'installer FFmp
 **⚠️ Remarque concernant les disques externes (USB/SD) :**
 Comme l'application s'exécute dans un environnement sécurisé (« Strict confinement »), elle ne peut pas accéder à vos disques externes par défaut. Si vos vidéos sont stockées sur une clé USB ou un disque dur secondaire, vous devez accorder la permission en exécutant cette commande une seule fois :
 
-```bash
 sudo snap connect simple-video-converter:removable-media
 
 ## Public Cible
