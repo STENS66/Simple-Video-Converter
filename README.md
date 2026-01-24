@@ -247,7 +247,7 @@ L'application détectera les codecs manquants. Voici comment activer la prise en
 
   **Licence** : Ce binaire FFmpeg est distribué sous la licence **GNU General Public License (GPL) version 3**.
 
-  **Code Source** : Conformément à la licence GPL, le code source de cette version de FFmpeg ainsi que ses scripts de compilation peuvent être obtenus sur le Dépôt "https://github.com/BtbN/FFmpeg-Builds" ou sur le site officiel de FFmpeg ici "https://ffmpeg.org/download.html". Simple-Video-Converter reste un logiciel propriétaire et agit simplement comme une interface graphique pour cet outil.
+  **Code Source** : Conformément à la licence GPL, le code source de cette version de FFmpeg ainsi que ses scripts de compilation peuvent être obtenus sur le Dépôt "https://github.com/BtbN/FFmpeg-Builds" ou sur le site officiel de FFmpeg ici "https://ffmpeg.org/download.html". Simple-Video-Converter reste un **logiciel propriétaire** et agit simplement comme une interface graphique pour cet outil.
 
 ⚠️ **Note concernant les disques externes (USB/SD)** : L'application s'exécutant dans un environnement sécurisé ("Confinement strict"), elle ne peut pas accéder à vos disques externes par défaut. Si vos vidéos sont stockées sur une clé USB ou un second disque dur, vous devez autoriser l'accès en exécutant cette commande une seule fois dans votre terminal :
 
