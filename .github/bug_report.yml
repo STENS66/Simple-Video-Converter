@@ -1,0 +1,55 @@
+name: Bug Report / Signaler un Bug
+description: Create a report to help us improve / Créer un rapport pour nous aider à améliorer l'app
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### ⚠️ SECURITY WARNING / ATTENTION SÉCURITÉ
+        If you are reporting a security vulnerability, **DO NOT** post it here.
+        Please refer to our [Security Policy](https://github.com/STENS66/Simple-Video-Converter/blob/main/SECURITY.md) and email us directly.
+        
+        Si vous signalez une faille de sécurité, **NE LA POSTEZ PAS** ici.
+        Merci de consulter notre [Politique de Sécurité](https://github.com/STENS66/Simple-Video-Converter/blob/main/SECURITY.md) et de nous contacter par email.
+  
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System / Système d'exploitation
+      options:
+        - Windows 11
+        - Windows 10
+        - Linux (Snap Store)
+        - Linux (Other/Autre)
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: App Version / Version de l'application
+      placeholder: e.g. 1.3.1
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description / Description du Bug
+      description: What happened? / Que s'est-il passé ?
+      placeholder: A clear and concise description of what the bug is.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce / Étapes pour reproduire
+      description: Steps to see the bug / Les étapes pour voir le bug
+      placeholder: |
+        1. Go to...
+        2. Click on...
+        3. See error...
+    validations:
+      required: true
