@@ -96,14 +96,17 @@ The application will detect missing codecs. Here is how to enable full support (
 4. Point to the location of your `ffmpeg.exe` and `ffprobe.exe` files.
 5. Restart the application.
 
-### On Linux (Ubuntu)
+### On Linux (Ubuntu/Snap)
 
-**Plug & Play Experience:**
-The Linux version (Snap) comes **pre-bundled with FFmpeg** (static binary).
-Unlike the Windows version, configuration is fully automatic: the "Configuration" menu for selecting FFmpeg is disabled as the application handles everything itself.
+**Plug & Play Experience**: The Linux version (Snap) is a **strictly confined**, all-in-one package. It comes **pre-bundled with a specific version of FFmpeg** (Static Build), optimized for hardware acceleration (NVIDIA & Intel VA-API). Unlike the Windows version, configuration is fully automatic: the "Configuration" menu for selecting FFmpeg paths is disabled as the application manages the conversion engine internally.
 
-**⚠️ Note on External Drives (USB/SD):**
-Because the application runs in a secure sandbox ("Strict confinement"), it cannot access your external drives by default. If your videos are stored on a USB stick or a secondary hard drive, you must grant permission by running this command once:
+**Open Source Compliance (FFmpeg)**: This application includes a pre-compiled binary of **FFmpeg (Version 7.1)** to handle video processing.
+
+  **License**: This FFmpeg binary is licensed under the **GNU General Public License (GPL) version 3**.
+
+  **Source Code**: In compliance with the GPL, the source code for this version of FFmpeg and its build scripts can be downloaded from "https://github.com/BtbN/FFmpeg-Builds" or the official FFmpeg website here "https://ffmpeg.org/download.html". Simple-Video-Converter itself remains **proprietary software** and simply acts as a graphical frontend.
+
+⚠️ **Note on External Drives (USB/SD)**: Because the application runs in a secure sandbox ("Strict confinement"), it cannot access your external drives by default. If your videos are stored on a USB stick or a secondary hard drive, you must grant permission by running this command once in your terminal:
 
 sudo snap connect simple-video-converter:removable-media
 
@@ -236,14 +239,17 @@ L'application détectera les codecs manquants. Voici comment activer la prise en
 4. Indiquez l'emplacement de vos fichiers `ffmpeg.exe` et `ffprobe.exe`.
 5. Redémarrez l'application.
 
-### Sur Linux (Ubuntu)
+### Sur Linux (Ubuntu/Snap)
 
-**Expérience Plug & Play :**
-La version Linux (Snap) est **fournie avec FFmpeg préinstallé** (binaire statique).
-Contrairement à la version Windows, la configuration est entièrement automatique : le menu de sélection de FFmpeg, nommé "Configuration", est désactivé car l'application gère tout elle-même.
+**Expérience Clé en Main (Plug & Play)** : La version Linux (Snap) est un paquet "tout-en-un" **en confinement strict**. Elle est livrée **avec sa propre version de FFmpeg** (Build Statique), déjà optimisée pour l'accélération matérielle (NVIDIA & Intel VA-API). Contrairement à la version Windows, la configuration est entièrement automatique : le menu "Configuration" permettant de choisir les chemins FFmpeg est désactivé car l'application gère elle-même le moteur de conversion en interne.
 
-**⚠️ Remarque concernant les disques externes (USB/SD) :**
-Comme l'application s'exécute dans un environnement sécurisé (« Strict confinement »), elle ne peut pas accéder à vos disques externes par défaut. Si vos vidéos sont stockées sur une clé USB ou un disque dur secondaire, vous devez accorder la permission en exécutant cette commande une seule fois :
+**Conformité Open Source (FFmpeg)** : Cette application inclut **un binaire pré-compilé de FFmpeg (Version 7.1)** pour gérer le traitement vidéo.
+
+  **Licence** : Ce binaire FFmpeg est distribué sous la licence **GNU General Public License (GPL) version 3**.
+
+  **Code Source** : Conformément à la licence GPL, le code source de cette version de FFmpeg ainsi que ses scripts de compilation peuvent être obtenus sur le Dépôt "https://github.com/BtbN/FFmpeg-Builds" ou sur le site officiel de FFmpeg ici "https://ffmpeg.org/download.html". Simple-Video-Converter reste un logiciel propriétaire et agit simplement comme une interface graphique pour cet outil.
+
+⚠️ **Note concernant les disques externes (USB/SD)** : L'application s'exécutant dans un environnement sécurisé ("Confinement strict"), elle ne peut pas accéder à vos disques externes par défaut. Si vos vidéos sont stockées sur une clé USB ou un second disque dur, vous devez autoriser l'accès en exécutant cette commande une seule fois dans votre terminal :
 
 sudo snap connect simple-video-converter:removable-media
 
