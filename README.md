@@ -266,8 +266,10 @@ Ce programme est destiné à un large public, des utilisateurs occasionnels aux 
 
 ## Téléchargement
 
-- [Microsoft Store (Windows 10/11)](https://apps.microsoft.com/detail/9P990VQJTRTK?hl=fr-be&gl=BE&ocid=pdpshare)
+- [![Get it from Microsoft](https://badge.microsoftstore.com/fr-fr/badge/get-it-from-ms-store-black.svg)](https://apps.microsoft.com/detail/9p990vqjtrtk?hl=fr-FR&gl=FR)
+  
 - [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/fr/snap-store-black.svg)](https://snapcraft.io/simple-video-converter)
+  
 - [Releases GitHub](https://github.com/STENS66/Simple-Video-Converter/releases)
 
 ## Contact
