@@ -1,5 +1,5 @@
 # Simple-Video-Converter - Version 1.3
-**Available on Microsoft Store (Windows) • Coming soon to Snap Store (Linux)**
+**Available on Microsoft Store (Windows) • Available on Snap Store (Linux)**
 
 # Copyright © Gaëtan Sencie 2025
 # All Rights Reserved.
@@ -123,7 +123,7 @@ This program is intended for a wide audience, from casual users to content creat
 ## Download
 
 - [Microsoft Store (Windows 10/11)](https://apps.microsoft.com/detail/9P990VQJTRTK?hl=en-us&gl=US)
-- [Snap Store (Ubuntu / Linux)] --> Validation in progress (Coming soon)
+- [Snap Store (Ubuntu / Linux)](https://snapcraft.io/simple-video-converter)
 - [GitHub Releases](https://github.com/STENS66/Simple-Video-Converter/releases)
 
 ## Contact
@@ -147,7 +147,7 @@ Developed by **Gaëtan Sencie**, Python developer.
 ---
 
 # Simple-Video-Converter - Version 1.3
-**Disponible sur le Microsoft Store (Windows) • Bientôt sur le Snap Store (Linux)**
+**Disponible sur le Microsoft Store (Windows) • Disponible sur le Snap Store (Linux)**
 
 # Copyright © Gaëtan Sencie 2025
 # Tous droits réservés.
@@ -267,7 +267,7 @@ Ce programme est destiné à un large public, des utilisateurs occasionnels aux 
 ## Téléchargement
 
 - [Microsoft Store (Windows 10/11)](https://apps.microsoft.com/detail/9P990VQJTRTK?hl=fr-be&gl=BE&ocid=pdpshare)
-- [Snap Store (Ubuntu / Linux)] --> en cours de validation (bientôt disponible)
+- [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/fr/snap-store-black.svg)](https://snapcraft.io/simple-video-converter)
 - [Releases GitHub](https://github.com/STENS66/Simple-Video-Converter/releases)
 
 ## Contact
