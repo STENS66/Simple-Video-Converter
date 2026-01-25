@@ -29,7 +29,7 @@ It operates exclusively **locally** on the user's computer, ensuring **maximum p
 
 Desktop application designed for:
 * **Windows**: 10 and 11 (64-bit).
-* **Linux**: Coming soon via **Snap** package (Ubuntu and compatible distributions).
+* **Linux**: **Snap** package (Ubuntu and compatible distributions).
 
 ## Features
 
@@ -123,7 +123,9 @@ This program is intended for a wide audience, from casual users to content creat
 ## Download
 
 - [Microsoft Store (Windows 10/11)](https://apps.microsoft.com/detail/9P990VQJTRTK?hl=en-us&gl=US)
-- [Snap Store (Ubuntu / Linux)](https://snapcraft.io/simple-video-converter)
+  
+- [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/fr/snap-store-black.svg)](https://snapcraft.io/simple-video-converter)
+  
 - [GitHub Releases](https://github.com/STENS66/Simple-Video-Converter/releases)
 
 ## Contact
