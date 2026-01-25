@@ -29,7 +29,7 @@ It operates exclusively **locally** on the user's computer, ensuring **maximum p
 
 Desktop application designed for:
 * **Windows**: 10 and 11 (64-bit).
-* **Linux**: **Snap** package (Ubuntu and compatible distributions).
+* **Linux**: Available via **Snap** package on Ubuntu and compatible distributions.
 
 ## Features
 
@@ -125,6 +125,11 @@ This program is intended for a wide audience, from casual users to content creat
 - [Microsoft Store (Windows 10/11)](https://apps.microsoft.com/detail/9P990VQJTRTK?hl=en-us&gl=US)
   
 - [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/fr/snap-store-black.svg)](https://snapcraft.io/simple-video-converter)
+
+- Or install via terminal:
+  
+  ```bash
+  sudo snap install simple-video-converter
   
 - [GitHub Releases](https://github.com/STENS66/Simple-Video-Converter/releases)
 
@@ -142,7 +147,7 @@ Thank you for using "**Simple-Video-Converter**"!
 
 Developed by **Gaëtan Sencie**, Python developer.
 
-**Simple-Video-Converter** is officially available on the **Microsoft Store**, **GitHub**, and soon on the **Snap Store**, ensuring reliable and validated distribution.
+**Simple-Video-Converter** is officially available on the **Microsoft Store**, **GitHub**, and the **Snap Store**, ensuring reliable and validated distribution.
 
 **Keywords**: video conversion, FFmpeg, FFprobe, privacy, offline application, data security, hardware acceleration, NVENC, Quick Sync, AMF, video codecs, AV1, MKV, MP4, AVI, WebM, Windows 10, Windows 11, Linux, Ubuntu, Snap Store, Python, GUI.
 
@@ -174,7 +179,7 @@ Elle fonctionne exclusivement **en local** sur l’ordinateur de l’utilisateur
 
 Application de bureau conçue pour :
 * **Windows** : 10 et 11 (64 bits).
-* **Linux** : Bientôt disponible via paquet **Snap** (Ubuntu et distributions compatibles).
+* **Linux** : Disponible via paquet **Snap** sur Ubuntu et distributions compatibles.
 
 ## Fonctionnalités
 
@@ -268,9 +273,14 @@ Ce programme est destiné à un large public, des utilisateurs occasionnels aux 
 
 ## Téléchargement
 
-- [![Get it from Microsoft](https://badge.microsoftstore.com/fr-fr/badge/get-it-from-ms-store-black.svg)](https://apps.microsoft.com/detail/9p990vqjtrtk?hl=fr-FR&gl=FR)
+- [Microsoft Store (Windows 10/11)](https://apps.microsoft.com/detail/9P990VQJTRTK?hl=fr-be&gl=BE&ocid=pdpshare)
   
 - [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/fr/snap-store-black.svg)](https://snapcraft.io/simple-video-converter)
+
+- Ou via le terminal :
+  
+  ```bash
+  sudo snap install simple-video-converter
   
 - [Releases GitHub](https://github.com/STENS66/Simple-Video-Converter/releases)
 
@@ -288,6 +298,6 @@ Merci d'utiliser "**Simple-Video-Converter**" !
 
 Développé par **Gaëtan Sencie**, développeur Python.
 
-**Simple-Video-Converter** est officiellement disponible sur le **Microsoft Store**, **GitHub** et bientôt sur le **Snap Store**, garantissant une diffusion fiable et validée.
+**Simple-Video-Converter** est officiellement disponible sur le **Microsoft Store**, **GitHub** et le **Snap Store**, garantissant une diffusion fiable et validée.
 
 **Mots-clés** : conversion vidéo, FFmpeg, FFprobe, confidentialité, application hors ligne, sécurité des données, accélération matérielle, NVENC, Quick Sync, AMF, codecs vidéo, AV1, MKV, MP4, AVI, WebM, Windows 10, Windows 11, Linux, Ubuntu, Snap Store, Python, GUI.
