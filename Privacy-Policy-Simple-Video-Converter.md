@@ -1,6 +1,6 @@
 # Privacy Policy - Simple Video Converter
 
-Privacy Policy for the application "**Simple-Video-Converter**".
+Privacy Policy for the different versions of the "**Simple-Video-Converter**".
 
 ## **Data Collection**
 
@@ -46,7 +46,7 @@ For any questions or requests regarding the privacy of your data, you can contac
 
 # Politique de confidentialité (Français)
 
-Politique de confidentialité pour l'application "**Simple-Video-Converter**".
+Politique de confidentialité pour les différentes versions de l'application "**Simple-Video-Converter**".
 
 ## **Collecte de données**
 
@@ -87,3 +87,4 @@ Conformément à la réglementation en vigueur, vous avez le droit d'accéder, d
 Pour toute question ou demande relative à la confidentialité de vos données, vous pouvez nous contacter à l'adresse suivante :
 
 **E-mail :** app.sencie@gmail.com
+
