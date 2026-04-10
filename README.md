@@ -1,4 +1,4 @@
-# Simple-Video-Converter - Version 1.4
+# Simple-Video-Converter - Version 1.5
 **Available on Microsoft Store (Windows) • Available on Snap Store (Linux)**
 
 # Copyright © Gaëtan Sencie 2025
@@ -13,7 +13,7 @@
 
 "**Simple-Video-Converter**" is a **high-performance**, **secure**, and cross-platform desktop application designed to simplify the video file conversion process. Leveraging the power of FFmpeg and FFprobe in the background, it provides an efficient solution to convert your videos between various formats, with quality and performance options tailored to your needs.
 
-This **version 1.4** marks a major milestone with the arrival of **Linux (Ubuntu) support** and numerous improvements to enrich the user experience, including advanced hardware detection and AV1 codec support.
+The application offers the advantage of full compatibility with **Linux (Ubuntu)** and **Microsoft Windows**, ensuring maximum flexibility. It features several advanced options, including **hardware detection** and **native support for the AV1 codec (for compatible configurations)**, optimizing performance based on your system setup.
 
 It operates exclusively **locally** on the user's computer, ensuring **maximum privacy**. Validated and published on the **Microsoft Store** and **Snap Store**, it features a robust architecture, a modern interface, and advanced features like **batch processing**.
 
@@ -36,7 +36,7 @@ Desktop application designed for:
 The "**Simple-Video-Converter**" application offers a clear user interface and robust features for a complete video conversion experience.
 
 **Interface Language Selection**:
-* Choose between **French**, **English**, **German**, **Spanish**, **Italian** and now Portuguese (Brazil) via the "Languages" tab in the menu bar.
+* Choose between **French**, **English**, **German**, and now **Spanish** and **Italian** via the "Languages" tab in the menu bar.
 
 **Flexible File Adding**:
 * Easily drag and drop your video files directly into the dedicated area.
@@ -44,6 +44,7 @@ The "**Simple-Video-Converter**" application offers a clear user interface and r
 
 **Conversion List Management**:
 * View all added files in a detailed table displaying name, duration, size, and status.
+* **Multi-stream Support**: Right-click on one or more files in the list and select "Select streams" to manage multiple audio tracks and subtitles.
 * Reorder files in the list for precise sequential processing.
 * Remove unwanted files from the list before conversion.
 
@@ -153,7 +154,7 @@ Developed by **Gaëtan Sencie**, Python developer.
 
 ---
 
-# Simple-Video-Converter - Version 1.4
+# Simple-Video-Converter - Version 1.5
 **Disponible sur le Microsoft Store (Windows) • Disponible sur le Snap Store (Linux)**
 
 # Copyright © Gaëtan Sencie 2025
@@ -163,7 +164,7 @@ Developed by **Gaëtan Sencie**, Python developer.
 
 "**Simple-Video-Converter**" est une application de bureau **performante**, **sécurisée** et multiplateforme conçue pour simplifier le processus de conversion de fichiers vidéo. Utilisant la puissance de FFmpeg et FFprobe en arrière-plan, elle offre une solution efficace pour convertir vos vidéos entre différents formats, avec des options de qualité et de performance adaptées à vos besoins.
 
-Cette **version 1.4** marque une étape majeure avec l'arrivée du **support Linux (Ubuntu)** et de nombreuses améliorations pour enrichir l'expérience utilisateur, incluant une détection matérielle avancée et le support du codec AV1.
+L'application offre l'avantage d'une compatibilité complète sur **Linux (Ubuntu)** et **Microsoft Windows**, garantissant une flexibilité maximale. Elle intègre plusieurs options avancées, notamment une **détection matérielle** et le **support natif du codec AV1 (pour les configurations compatibles)**, optimisant ainsi les performances selon votre configuration.
 
 Elle fonctionne exclusivement **en local** sur l’ordinateur de l’utilisateur, garantissant ainsi une **confidentialité maximale**. Validée et publiée sur le **Microsoft Store** et le **Snap Store**, elle offre une architecture robuste, une interface moderne et des fonctionnalités avancées comme le **traitement par lots**.
 
@@ -186,7 +187,7 @@ Application de bureau conçue pour :
 L'application "**Simple-Video-Converter**" propose une interface utilisateur claire et des fonctionnalités robustes pour une expérience de conversion vidéo complète.
 
 **Choix des langues de l'interface**:
-* Choisissez entre le **Français**, l'**Anglais**, l'**Allemand**, l'**Espagnol**, l'**Italien** et désormais le **Portugais (Brésil) via l'onglet "Langues" dans la barre de menu.
+* Choisissez entre le **Français**, l'**Anglais**, l'**Allemand**, et désormais l'**Espagnol** et l'**Italien** via l'onglet "Langues" dans la barre de menu.
 
 **Ajout de fichiers flexible** :
 * Glissez-déposez facilement vos fichiers vidéo directement dans la zone dédiée.
@@ -194,6 +195,7 @@ L'application "**Simple-Video-Converter**" propose une interface utilisateur cla
 
 **Gestion de la liste de conversion** :
 * Visualisez tous les fichiers ajoutés dans un tableau détaillé affichant le nom, la durée, la taille et le statut.
+* **Support Multi-flux** : Faites un clic droit sur un ou plusieurs fichiers de la liste et choisissez "Sélectionner les flux" pour gérer les différentes pistes audio et les sous-titres.
 * Réorganisez l'ordre des fichiers dans la liste pour un traitement séquentiel précis.
 * Supprimez les fichiers indésirables de la liste avant la conversion.
 
