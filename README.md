@@ -36,7 +36,7 @@ Desktop application designed for:
 The "**Simple-Video-Converter**" application offers a clear user interface and robust features for a complete video conversion experience.
 
 **Interface Language Selection**:
-* Choose between **French**, **English**, **German**, and now **Spanish** and **Italian** via the "Languages" tab in the menu bar.
+* Choose between **French**, **English**, **German**, and now **Spanish**, **Portuguese (Brazil)** and **Italian** via the "Languages" tab in the menu bar.
 
 **Flexible File Adding**:
 * Easily drag and drop your video files directly into the dedicated area.
@@ -187,7 +187,7 @@ Application de bureau conçue pour :
 L'application "**Simple-Video-Converter**" propose une interface utilisateur claire et des fonctionnalités robustes pour une expérience de conversion vidéo complète.
 
 **Choix des langues de l'interface**:
-* Choisissez entre le **Français**, l'**Anglais**, l'**Allemand**, et désormais l'**Espagnol** et l'**Italien** via l'onglet "Langues" dans la barre de menu.
+* Choisissez entre le **Français**, l'**Anglais**, l'**Allemand**, et désormais l'**Espagnol**, **Portugais (Brésil)** et l'**Italien** via l'onglet "Langues" dans la barre de menu.
 
 **Ajout de fichiers flexible** :
 * Glissez-déposez facilement vos fichiers vidéo directement dans la zone dédiée.
