@@ -1,4 +1,4 @@
-# Simple-Video-Converter - Version 1.5
+# Simple-Video-Converter - Version 1.6
 **Available on Microsoft Store (Windows) • Available on Snap Store (Linux)**
 
 # Copyright © Gaëtan Sencie 2025
@@ -36,7 +36,7 @@ Desktop application designed for:
 The "**Simple-Video-Converter**" application offers a clear user interface and robust features for a complete video conversion experience.
 
 **Interface Language Selection**:
-* Choose between **French**, **English**, **German**, and now **Spanish**, **Portuguese (Brazil)** and **Italian** via the "Languages" tab in the menu bar.
+* Choose between **French**, **English**, **German**, and now **Spanish**, **Portuguese (Brazil)**, **Italian** ang **Japanese** via the "Languages" tab in the menu bar.
 
 **Flexible File Adding**:
 * Easily drag and drop your video files directly into the dedicated area.
@@ -154,7 +154,7 @@ Developed by **Gaëtan Sencie**, Python developer.
 
 ---
 
-# Simple-Video-Converter - Version 1.5
+# Simple-Video-Converter - Version 1.6
 **Disponible sur le Microsoft Store (Windows) • Disponible sur le Snap Store (Linux)**
 
 # Copyright © Gaëtan Sencie 2025
@@ -187,7 +187,7 @@ Application de bureau conçue pour :
 L'application "**Simple-Video-Converter**" propose une interface utilisateur claire et des fonctionnalités robustes pour une expérience de conversion vidéo complète.
 
 **Choix des langues de l'interface**:
-* Choisissez entre le **Français**, l'**Anglais**, l'**Allemand**, et désormais l'**Espagnol**, **Portugais (Brésil)** et l'**Italien** via l'onglet "Langues" dans la barre de menu.
+* Choisissez entre le **Français**, l'**Anglais**, l'**Allemand**, et désormais l'**Espagnol**, **Portugais (Brésil)**, **Italien** et **Japonais** via l'onglet "Langues" dans la barre de menu.
 
 **Ajout de fichiers flexible** :
 * Glissez-déposez facilement vos fichiers vidéo directement dans la zone dédiée.
