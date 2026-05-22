@@ -1,4 +1,4 @@
-# Simple-Video-Converter - Version 1.6
+# Simple-Video-Converter - Version 1.7
 **Available on Microsoft Store (Windows) • Available on Snap Store (Linux)**
 
 # Copyright © Gaëtan Sencie 2025
@@ -36,7 +36,7 @@ Desktop application designed for:
 The "**Simple-Video-Converter**" application offers a clear user interface and robust features for a complete video conversion experience.
 
 **Interface Language Selection**:
-* Choose between **French**, **English**, **German**, and now **Spanish**, **Portuguese (Brazil)**, **Italian** ang **Japanese** via the "Languages" tab in the menu bar.
+* Choose between **French**, **English**, **German**, and now **Spanish**, **Portuguese (Brazil)**, **Italian** and **Japanese** via the "Languages" tab in the menu bar.
 
 **Flexible File Adding**:
 * Easily drag and drop your video files directly into the dedicated area.
@@ -44,6 +44,10 @@ The "**Simple-Video-Converter**" application offers a clear user interface and r
 
 **Conversion List Management**:
 * View all added files in a detailed table displaying name, duration, size, and status.
+* **Advanced List Ergonomics:** Full support for `Ctrl + Click` and `Shift + Click` for multi-selection.
+* **Instant Repositioning:** Move multiple selected files directly to the absolute top or bottom of the queue in one click.
+* **Visual Drag & Drop:** Fluidly reorder files manually using the mouse.
+* **Delta Storage Insights:** A dedicated "Output / Gain" column showing exact storage space saved or lost in Megabytes (MB) and Percentages (%) immediately after processing.
 * **Multi-stream Support**: Right-click on one or more files in the list and select "Select streams" to manage multiple audio tracks and subtitles.
 * Reorder files in the list for precise sequential processing.
 * Remove unwanted files from the list before conversion.
@@ -53,6 +57,7 @@ The "**Simple-Video-Converter**" application offers a clear user interface and r
 * **Output Formats**: Convert your videos to popular formats such as MKV, MP4, AVI, and WebM.
 
 **Advanced Video Control & Hardware**:
+* **Universal "Copy" Mode (Passthrough):** Ability to instantly remux or extract audio and subtitle streams without re-encoding the video track. Achieves lightning-fast speeds (64x to 68x) with absolute zero quality loss.
 * **Advanced Hardware Detection**: The application automatically identifies available hardware (NVIDIA GPU, AMD, Intel) and adapts encoding options accordingly.
 * **Video Codecs**: Extensive support including H.264, HEVC, VP9, Xvid, and the addition of **AV1 support** (for compatible hardware).
 * **Dynamic Codec Management**: Smart detection of available codecs based on the FFmpeg version (embedded or GPL).
@@ -74,6 +79,8 @@ The "**Simple-Video-Converter**" application offers a clear user interface and r
 
 **Real-Time Monitoring**:
 * Progress bar and real-time status updates.
+* **Intelligent Global ETA:** Advanced weight-based progression tracking (processed bytes instead of simple file count) for ultra-stable time estimation.
+* **Post-Batch Session Report:** Summary of average bitrate, speed factors, total time spent, and total space recovered printed inside the event log window.
 * **Enhanced Log Management**: Built-in event log for better tracking of operations and debugging.
 
 ### Enhanced User Experience
@@ -99,17 +106,28 @@ The application will detect missing codecs. Here is how to enable full support (
 
 ### On Linux (Ubuntu/Snap)
 
-**Plug & Play Experience**: The Linux version (Snap) is a **strictly confined**, all-in-one package. It comes **pre-bundled with a specific version of FFmpeg** (Static Build), optimized for hardware acceleration (NVIDIA & Intel VA-API). Unlike the Windows version, configuration is fully automatic: the "Configuration" menu for selecting FFmpeg paths is disabled as the application manages the conversion engine internally.
+**Plug & Play Experience**: The Linux version (Snap) is a **strictly confined**, all-in-one package. Unlike the Windows version, configuration is fully automatic: the "Configuration" menu for selecting FFmpeg paths is disabled as the application manages the conversion engine internally.
 
-**Open Source Compliance (FFmpeg)**: This application includes a pre-compiled binary of **FFmpeg (Version 7.1)** to handle video processing.
+**Intelligent Adaptive Engine:** The Linux (Snap) version is now equipped with a unique adaptive detection system. It features two distinct conversion engines:
 
-  **License**: This FFmpeg binary is licensed under the **GNU General Public License (GPL) version 3**.
+   * **Engine 8.1 (High Performance):** Used for recent hardware and the latest drivers.
 
-  **Source Code**: In compliance with the GPL, the source code for this version of FFmpeg and its build scripts can be downloaded from "https://github.com/BtbN/FFmpeg-Builds" or the official FFmpeg website here "https://ffmpeg.org/download.html". Simple-Video-Converter itself remains **proprietary software** and simply acts as a graphical frontend.
+   * **Engine 7.1 (Maximum Compatibility):** Used as an automatic fallback to ensure NVIDIA hardware acceleration remains operational, even on older configurations.
+    The application analyzes your system at startup and selects the most efficient engine without any intervention on your part.
+
+**Open Source Compliance (FFmpeg):** This application includes pre-compiled FFmpeg binaries (Versions 8.1 and 7.1).
+
+   * **License:** These binaries are distributed under the GNU General Public License (GPL) version 3.
+   
+   * **Source Code:** The source code and compilation scripts are available on the BtbN/FFmpeg-Builds repository or on the official ffmpeg.org website. Simple-Video-Converter acts as a proprietary graphical interface for these tools.
+
 
 ⚠️ **Note on External Drives (USB/SD)**: Because the application runs in a secure sandbox ("Strict confinement"), it cannot access your external drives by default. If your videos are stored on a USB stick or a secondary hard drive, you must grant permission by running this command once in your terminal:
 
+```
 sudo snap connect simple-video-converter:removable-media
+```
+
 
 ## Target Audience
 
@@ -129,8 +147,9 @@ This program is intended for a wide audience, from casual users to content creat
 
 - Or install via terminal:
   
-  ```bash
+  ```
   sudo snap install simple-video-converter
+  ```
   
 - [GitHub Releases](https://github.com/STENS66/Simple-Video-Converter/releases)
 
@@ -150,11 +169,11 @@ Developed by **Gaëtan Sencie**, Python developer.
 
 **Simple-Video-Converter** is officially available on the **Microsoft Store**, **GitHub**, and the **Snap Store**, ensuring reliable and validated distribution.
 
-**Keywords**: video conversion, FFmpeg, FFprobe, privacy, offline application, data security, hardware acceleration, NVENC, Quick Sync, AMF, video codecs, AV1, MKV, MP4, AVI, WebM, Windows 10, Windows 11, Linux, Ubuntu, Snap Store, Python, GUI.
+**Keywords**: video conversion, FFmpeg, FFprobe, privacy, offline application, data security, hardware acceleration, NVENC, Quick Sync, AMF, video codecs, AV1, MKV, MP4, AVI, WebM, Windows 10, Windows 11, Linux, Ubuntu, Snap Store, Python, GUI, video remuxing, video passthrough, stream extractor, batch video reorder, FFmpeg GUI, space reduction tracker, multi-selection queue.
 
 ---
 
-# Simple-Video-Converter - Version 1.6
+# Simple-Video-Converter - Version 1.7
 **Disponible sur le Microsoft Store (Windows) • Disponible sur le Snap Store (Linux)**
 
 # Copyright © Gaëtan Sencie 2025
@@ -195,6 +214,10 @@ L'application "**Simple-Video-Converter**" propose une interface utilisateur cla
 
 **Gestion de la liste de conversion** :
 * Visualisez tous les fichiers ajoutés dans un tableau détaillé affichant le nom, la durée, la taille et le statut.
+* **Ergonomie Avancée :** Support complet des combinaisons `Ctrl + Clic` et `Maj + Clic` pour la sélection multiple.
+* **Repositionnement Éclair :** Déplacez un groupe de fichiers sélectionnés tout en haut ou tout en bas de la liste en un seul clic.
+* **Glisser-Déposer Visuel :** Réorganisez l'ordre de passage des fichiers de manière fluide directement à la souris.
+* **Bilan de Stockage en Temps Réel :** Une colonne dédiée "Sortie / Gain" affiche l'espace disque gagné ou perdu en Mégaoctets (Mo) et en Pourcentages (%) dès la fin du traitement.
 * **Support Multi-flux** : Faites un clic droit sur un ou plusieurs fichiers de la liste et choisissez "Sélectionner les flux" pour gérer les différentes pistes audio et les sous-titres.
 * Réorganisez l'ordre des fichiers dans la liste pour un traitement séquentiel précis.
 * Supprimez les fichiers indésirables de la liste avant la conversion.
@@ -204,6 +227,7 @@ L'application "**Simple-Video-Converter**" propose une interface utilisateur cla
 * **Formats de sortie** : Convertissez vos vidéos vers les formats populaires tels que MKV, MP4, AVI et WebM.
 
 **Contrôle avancé de la vidéo & Hardware** :
+* **Mode "Copie" Universel (Passthrough) :** Permet de réincorporer ou d'extraire instantanément des pistes audio et des sous-titres sans ré-encoder la piste vidéo. Atteint des vitesses foudroyantes (64x à 68x) avec une perte de qualité absolument nulle.
 * **Détection Hardware Avancée** : L'application identifie automatiquement le matériel disponible (GPU NVIDIA, AMD, Intel) et adapte les options d'encodage en conséquence.
 * **Codecs vidéo** : Support étendu incluant H.264, HEVC, VP9, Xvid et l'ajout du **support AV1** (pour les matériels compatibles).
 * **Gestion dynamique des codecs** : Détection intelligente des codecs disponibles selon la version de FFmpeg (embarquée ou GPL).
@@ -225,7 +249,9 @@ L'application "**Simple-Video-Converter**" propose une interface utilisateur cla
 
 **Suivi en temps réel** :
 * Barre de progression et statuts en temps réel.
-* **Gestion des logs améliorée** : Journal des événements intégré pour un meilleur suivi des opérations et du débogage.
+* **ETA Global Intelligent :** Calcul du temps restant basé rigoureusement sur le poids des fichiers (octets traités) plutôt que sur le simple nombre de fichiers, garantissant une estimation ultra-stable.
+* **Rapport de Fin de Session :** Résumé complet affiché dans le journal des événements (bitrate moyen, vitesse globale, temps total passé et total d'espace disque récupéré).
+* **Gestion des logs améliorée :** Journal des événements intégré pour un meilleur suivi des opérations et du débogage.
 
 ### Expérience Utilisateur Améliorée
 * **Réglages Intelligents** : Pour éviter les erreurs, l'application propose des réglages pré-configurés et des plages de valeurs adaptées à chaque codec.
@@ -250,17 +276,27 @@ L'application détectera les codecs manquants. Voici comment activer la prise en
 
 ### Sur Linux (Ubuntu/Snap)
 
-**Expérience Clé en Main (Plug & Play)** : La version Linux (Snap) est un paquet "tout-en-un" **en confinement strict**. Elle est livrée **avec sa propre version de FFmpeg** (Build Statique), déjà optimisée pour l'accélération matérielle (NVIDIA & Intel VA-API). Contrairement à la version Windows, la configuration est entièrement automatique : le menu "Configuration" permettant de choisir les chemins FFmpeg est désactivé car l'application gère elle-même le moteur de conversion en interne.
+**Expérience Clé en Main (Plug & Play)** : La version Linux (Snap) est un paquet "tout-en-un" **en confinement strict**. Contrairement à la version Windows, la configuration est entièrement automatique : le menu "Configuration" permettant de choisir les chemins FFmpeg est désactivé car l'application gère elle-même le moteur de conversion en interne.
 
-**Conformité Open Source (FFmpeg)** : Cette application inclut **un binaire pré-compilé de FFmpeg (Version 7.1)** pour gérer le traitement vidéo.
+**Moteur Adaptatif Intelligent :** La version Linux (Snap) est désormais équipée d'un système de détection adaptative unique. Elle embarque deux moteurs de conversion distincts :
 
-  **Licence** : Ce binaire FFmpeg est distribué sous la licence **GNU General Public License (GPL) version 3**.
+   * **Moteur 8.1 (Haute Performance) :** Utilisé pour les matériels récents et les derniers pilotes.
 
-  **Code Source** : Conformément à la licence GPL, le code source de cette version de FFmpeg ainsi que ses scripts de compilation peuvent être obtenus sur le Dépôt "https://github.com/BtbN/FFmpeg-Builds" ou sur le site officiel de FFmpeg ici "https://ffmpeg.org/download.html". Simple-Video-Converter reste un **logiciel propriétaire** et agit simplement comme une interface graphique pour cet outil.
+   * **Moteur 7.1 (Compatibilité Maximale) :** Utilisé comme solution de repli automatique pour garantir que l'accélération matérielle NVIDIA reste opérationnelle, même sur des configurations plus anciennes.
+    L'application analyse votre système au démarrage et sélectionne le moteur le plus performant sans aucune intervention de votre part.
+
+**Conformité Open Source (FFmpeg) :** Cette application inclut des binaires pré-compilés de FFmpeg (Versions 8.1 et 7.1).
+
+  * **Licence :** Ces binaires sont distribués sous la licence GNU General Public License (GPL) version 3.
+
+  * **Code Source :** Le code source et les scripts de compilation sont disponibles sur le dépôt BtbN/FFmpeg-Builds ou sur le site officiel ffmpeg.org. Simple-Video-Converter agit comme une interface graphique propriétaire pour ces outils.
+
 
 ⚠️ **Note concernant les disques externes (USB/SD)** : L'application s'exécutant dans un environnement sécurisé ("Confinement strict"), elle ne peut pas accéder à vos disques externes par défaut. Si vos vidéos sont stockées sur une clé USB ou un second disque dur, vous devez autoriser l'accès en exécutant cette commande une seule fois dans votre terminal :
 
+```
 sudo snap connect simple-video-converter:removable-media
+```
 
 ## Public Cible
 
@@ -281,8 +317,9 @@ Ce programme est destiné à un large public, des utilisateurs occasionnels aux 
 
 - Ou via le terminal :
   
-  ```bash
+  ```
   sudo snap install simple-video-converter
+  ```
   
 - [Releases GitHub](https://github.com/STENS66/Simple-Video-Converter/releases)
 
@@ -302,4 +339,4 @@ Développé par **Gaëtan Sencie**, développeur Python.
 
 **Simple-Video-Converter** est officiellement disponible sur le **Microsoft Store**, **GitHub** et le **Snap Store**, garantissant une diffusion fiable et validée.
 
-**Mots-clés** : conversion vidéo, FFmpeg, FFprobe, confidentialité, application hors ligne, sécurité des données, accélération matérielle, NVENC, Quick Sync, AMF, codecs vidéo, AV1, MKV, MP4, AVI, WebM, Windows 10, Windows 11, Linux, Ubuntu, Snap Store, Python, GUI.
+**Mots-clés** : conversion vidéo, FFmpeg, FFprobe, confidentialité, application hors ligne, sécurité des données, accélération matérielle, NVENC, Quick Sync, AMF, codecs vidéo, AV1, MKV, MP4, AVI, WebM, Windows 10, Windows 11, Linux, Ubuntu, Snap Store, Python, GUI, remuxing vidéo, passthrough vidéo, extraction de flux, réordonnancement par lot, interface graphique FFmpeg, calcul de gain d'espace, file d'attente.
