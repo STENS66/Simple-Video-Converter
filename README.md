@@ -1,4 +1,4 @@
-# Simple-Video-Converter - Version 1.7
+# Simple-Video-Converter - Version 1.8
 **Available on Microsoft Store (Windows) • Available on Snap Store (Linux)**
 
 # Copyright © Gaëtan Sencie 2025
@@ -57,6 +57,13 @@ The "**Simple-Video-Converter**" application offers a clear user interface and r
 * **Output Formats**: Convert your videos to popular formats such as MKV, MP4, AVI, and WebM.
 
 **Advanced Video Control & Hardware**:
+
+* **Target Size with 2-pass Encoding:** Set the exact desired final size for your video (adjustable limit from 1 to 50,000 MB).
+
+**Advantages:** Ideal for adhering to strict size limits when sharing on platforms like Discord, social media, or via email, while ensuring the best possible visual quality for that size.
+
+**Accuracy & Technology:** The system utilizes FFmpeg's 2-pass encoding mode. You can expect an accuracy of 92% to 98% relative to the requested target (e.g., for a 100 MB request, the final file will generally be between 92 and 98 MB). This safety margin ensures that the set limit is never exceeded, adapting to the dynamic constraints of the scenes, the container, and the audio.
+
 * **Universal "Copy" Mode (Passthrough):** Ability to instantly remux or extract audio and subtitle streams without re-encoding the video track. Achieves lightning-fast speeds (64x to 68x) with absolute zero quality loss.
 * **Advanced Hardware Detection**: The application automatically identifies available hardware (NVIDIA GPU, AMD, Intel) and adapts encoding options accordingly.
 * **Video Codecs**: Extensive support including H.264, HEVC, VP9, Xvid, and the addition of **AV1 support** (for compatible hardware).
@@ -169,11 +176,11 @@ Developed by **Gaëtan Sencie**, Python developer.
 
 **Simple-Video-Converter** is officially available on the **Microsoft Store**, **GitHub**, and the **Snap Store**, ensuring reliable and validated distribution.
 
-**Keywords**: video conversion, FFmpeg, FFprobe, privacy, offline application, data security, hardware acceleration, NVENC, Quick Sync, AMF, video codecs, AV1, MKV, MP4, AVI, WebM, Windows 10, Windows 11, Linux, Ubuntu, Snap Store, Python, GUI, video remuxing, video passthrough, stream extractor, batch video reorder, FFmpeg GUI, space reduction tracker, multi-selection queue.
+**Keywords**: video conversion, video compression, target size, 2-pass encoding, file size reduction, Discord limit, FFmpeg, FFprobe, privacy, offline application, data security, hardware acceleration, NVENC, Quick Sync, AMF, video codecs, AV1, MKV, MP4, AVI, WebM, Windows 10, Windows 11, Linux, Ubuntu, Snap Store, Python, GUI, video remuxing, video passthrough, stream extractor, batch video reorder, FFmpeg GUI, space reduction tracker, multi-selection queue.
 
 ---
 
-# Simple-Video-Converter - Version 1.7
+# Simple-Video-Converter - Version 1.8
 **Disponible sur le Microsoft Store (Windows) • Disponible sur le Snap Store (Linux)**
 
 # Copyright © Gaëtan Sencie 2025
@@ -227,6 +234,13 @@ L'application "**Simple-Video-Converter**" propose une interface utilisateur cla
 * **Formats de sortie** : Convertissez vos vidéos vers les formats populaires tels que MKV, MP4, AVI et WebM.
 
 **Contrôle avancé de la vidéo & Hardware** :
+
+* **Ciblage de la taille (Target Size) avec Encodage 2-passes :** Définissez le poids final exact souhaité pour votre vidéo (limite ajustable de 1 à 50 000 Mo).
+
+**Avantages :** Idéal pour respecter les limites strictes de taille lors du partage sur des plateformes comme Discord, les réseaux sociaux, ou par e-mail, tout en garantissant la meilleure qualité visuelle possible pour ce poids.
+
+**Précision & Technologie :** Le système utilise le mode d'encodage en double passe (2-pass) de FFmpeg. Vous pouvez vous attendre à une précision de 92 % à 98 % par rapport à la cible demandée (ex: pour une demande de 100 Mo, le fichier final pèsera généralement entre 92 et 98 Mo). Cette marge garantit de ne jamais dépasser le plafond fixé, en s'adaptant aux contraintes dynamiques des scènes, du conteneur et de l'audio.
+
 * **Mode "Copie" Universel (Passthrough) :** Permet de réincorporer ou d'extraire instantanément des pistes audio et des sous-titres sans ré-encoder la piste vidéo. Atteint des vitesses foudroyantes (64x à 68x) avec une perte de qualité absolument nulle.
 * **Détection Hardware Avancée** : L'application identifie automatiquement le matériel disponible (GPU NVIDIA, AMD, Intel) et adapte les options d'encodage en conséquence.
 * **Codecs vidéo** : Support étendu incluant H.264, HEVC, VP9, Xvid et l'ajout du **support AV1** (pour les matériels compatibles).
@@ -339,4 +353,4 @@ Développé par **Gaëtan Sencie**, développeur Python.
 
 **Simple-Video-Converter** est officiellement disponible sur le **Microsoft Store**, **GitHub** et le **Snap Store**, garantissant une diffusion fiable et validée.
 
-**Mots-clés** : conversion vidéo, FFmpeg, FFprobe, confidentialité, application hors ligne, sécurité des données, accélération matérielle, NVENC, Quick Sync, AMF, codecs vidéo, AV1, MKV, MP4, AVI, WebM, Windows 10, Windows 11, Linux, Ubuntu, Snap Store, Python, GUI, remuxing vidéo, passthrough vidéo, extraction de flux, réordonnancement par lot, interface graphique FFmpeg, calcul de gain d'espace, file d'attente.
+**Mots-clés** : conversion vidéo, compression vidéo, taille cible, encodage 2-passes, réduction de taille, limite Discord, FFmpeg, FFprobe, confidentialité, application hors ligne, sécurité des données, accélération matérielle, NVENC, Quick Sync, AMF, codecs vidéo, AV1, MKV, MP4, AVI, WebM, Windows 10, Windows 11, Linux, Ubuntu, Snap Store, Python, GUI, remuxing vidéo, passthrough vidéo, extraction de flux, réordonnancement par lot, interface graphique FFmpeg, calcul de gain d'espace, file d'attente.
