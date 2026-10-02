@@ -1,7 +1,7 @@
-# Simple-Video-Converter - Version 1.8
-**Available on Microsoft Store (Windows) • Available on Snap Store (Linux)**
+# Simple-Video-Converter - Version 1.9
+**Available on Microsoft Store (Windows) • Coming soon to the Snap Store (Linux)**
 
-# Copyright © Gaëtan Sencie 2025
+# Copyright © Gaëtan Sencie 2025-2026
 # All Rights Reserved.
 
 ---
@@ -48,9 +48,10 @@ The "**Simple-Video-Converter**" application offers a clear user interface and r
 * **Instant Repositioning:** Move multiple selected files directly to the absolute top or bottom of the queue in one click.
 * **Visual Drag & Drop:** Fluidly reorder files manually using the mouse.
 * **Delta Storage Insights:** A dedicated "Output / Gain" column showing exact storage space saved or lost in Megabytes (MB) and Percentages (%) immediately after processing.
-* **Multi-stream Support**: Right-click on one or more files in the list and select "Select streams" to manage multiple audio tracks and subtitles.
+* **Multi-stream & Batch Control:** `Right-click` to manage multiple audio tracks and subtitles, or quickly toggle specific languages and codecs for the entire queue.
 * Reorder files in the list for precise sequential processing.
 * Remove unwanted files from the list before conversion.
+* **In-Line Technical Details & HTML Reports:** Instantly view crucial stream tags (e.g., `[1920x1080, 5000 kbps]`) directly in the selection dialog, or open a rich, scrollable HTML information report for massive MKV files.
 
 **Customizable Output Options**:
 * **Output Directory**: Easily choose the folder where your converted videos will be saved.
@@ -71,6 +72,7 @@ The "**Simple-Video-Converter**" application offers a clear user interface and r
 * **Video Quality**: Adjust quality with the Constant Rate Factor (CRF) or define a specific bitrate.
 * **Encoding Presets**: Apply presets (ultrafast, medium, veryslow, etc.) to balance speed and file size.
 * **Resolution**: Resize your videos (1080p, 720p, etc.) or define a custom resolution.
+* **Smart Aspect Ratio Protection:** Automatically calculates the correct dimensions when resizing to prevent video stretching. Powered by a Modulo 2 truncation engine to guarantee even-numbered resolutions, preventing hardware encoders from crashing.
 
 **Audio Options**:
 * **Audio Codecs**: Select the desired codec (AAC, MP3, Opus, Vorbis) or copy the original stream.
@@ -80,6 +82,7 @@ The "**Simple-Video-Converter**" application offers a clear user interface and r
 * Choose automatic action: ask, overwrite, skip, or rename the new file.
 
 **Automation and Convenience**:
+* **Automated Power Management:** Tell your PC to Sleep, Hibernate, or Shut down after completing a long queue. Includes a 60-second cancelable safety countdown and smart session resets to prevent accidental shutdowns.
 * **Settings Persistence**: Your preferences (sliders, positions, themes) are saved and restored between sessions.
 * Option to delete original files after success.
 * Option to open the output folder upon completion.
@@ -134,7 +137,11 @@ The application will detect missing codecs. Here is how to enable full support (
 ```
 sudo snap connect simple-video-converter:removable-media
 ```
+⚠️ **Note on Power Management:** Because of strict confinement, to allow the application to automatically shut down your Linux PC after a conversion queue, you must grant the permission by running this command once in your terminal:
 
+```
+sudo snap connect simple-video-converter:shutdown
+```
 
 ## Target Audience
 
@@ -180,10 +187,10 @@ Developed by **Gaëtan Sencie**, Python developer.
 
 ---
 
-# Simple-Video-Converter - Version 1.8
-**Disponible sur le Microsoft Store (Windows) • Disponible sur le Snap Store (Linux)**
+# Simple-Video-Converter - Version 1.9
+**Disponible sur le Microsoft Store (Windows) • Prochainement disponible sur le Snap Store (Linux)**
 
-# Copyright © Gaëtan Sencie 2025
+# Copyright © Gaëtan Sencie 2025-2026
 # Tous droits réservés.
 
 ## Description
@@ -225,9 +232,10 @@ L'application "**Simple-Video-Converter**" propose une interface utilisateur cla
 * **Repositionnement Éclair :** Déplacez un groupe de fichiers sélectionnés tout en haut ou tout en bas de la liste en un seul clic.
 * **Glisser-Déposer Visuel :** Réorganisez l'ordre de passage des fichiers de manière fluide directement à la souris.
 * **Bilan de Stockage en Temps Réel :** Une colonne dédiée "Sortie / Gain" affiche l'espace disque gagné ou perdu en Mégaoctets (Mo) et en Pourcentages (%) dès la fin du traitement.
-* **Support Multi-flux** : Faites un clic droit sur un ou plusieurs fichiers de la liste et choisissez "Sélectionner les flux" pour gérer les différentes pistes audio et les sous-titres.
+* **Contrôle Multi-flux & par Lot :** Faites un `clic droit` pour gérer les différentes pistes audio et sous-titres, ou activez/désactivez rapidement des langues et codecs spécifiques pour toute la file d'attente.
 * Réorganisez l'ordre des fichiers dans la liste pour un traitement séquentiel précis.
 * Supprimez les fichiers indésirables de la liste avant la conversion.
+* **Détails Techniques Intégrés & Rapports HTML :** Visualisez instantanément les tags cruciaux (ex: `[1920x1080, 5000 kbps]`) dans la fenêtre de sélection, ou ouvrez un rapport d'informations HTML riche et défilant pour les gros fichiers MKV.
 
 **Options de sortie personnalisables** :
 * **Répertoire de sortie** : Choisissez facilement le dossier où vos vidéos converties seront sauvegardées.
@@ -248,6 +256,7 @@ L'application "**Simple-Video-Converter**" propose une interface utilisateur cla
 * **Qualité vidéo** : Ajustez la qualité avec le facteur de qualité constant (CRF) ou définissez un bitrate spécifique.
 * **Presets d'encodage** : Appliquez des presets (ultrafast, medium, veryslow, etc.) pour équilibrer vitesse et taille.
 * **Résolution** : Redimensionnez vos vidéos (1080p, 720p, etc.) ou définissez une résolution personnalisée.
+* **Protection Intelligente du Ratio d'Aspect :** Calcule dynamiquement les dimensions correctes lors du redimensionnement pour éviter toute déformation. Utilise un moteur de troncature Modulo 2 pour garantir des résolutions paires, évitant ainsi le plantage des encodeurs matériels.
 
 **Options audio** :
 * **Codecs audio** : Sélectionnez le codec désiré (AAC, MP3, Opus, Vorbis) ou copiez le flux original.
@@ -257,6 +266,7 @@ L'application "**Simple-Video-Converter**" propose une interface utilisateur cla
 * Choisissez l'action automatique : demander, écraser, ignorer ou renommer le nouveau fichier.
 
 **Automatisation et commodité** :
+* **Gestion Automatisée de l'Alimentation :** Programmez votre PC pour se mettre en Veille, Hibernation ou s'Éteindre à la fin d'une longue file d'attente. Inclut un compte à rebours de **sécurité de 60 secondes** annulable et une réinitialisation intelligente à chaque session pour éviter les accidents.
 * **Persistence des réglages** : Vos préférences (sliders, positions, thèmes) sont sauvegardées et restaurées entre les sessions.
 * Option de supprimer les fichiers originaux après succès.
 * Option d'ouvrir le dossier de sortie à la fin.
@@ -310,6 +320,12 @@ L'application détectera les codecs manquants. Voici comment activer la prise en
 
 ```
 sudo snap connect simple-video-converter:removable-media
+```
+
+⚠️ **Note concernant la Gestion de l'Alimentation :** En raison du confinement strict, pour autoriser l'application à éteindre automatiquement votre PC Linux à la fin d'une conversion, vous devez accorder la permission en exécutant cette commande une seule fois dans votre terminal :
+
+```
+sudo snap connect simple-video-converter:shutdown
 ```
 
 ## Public Cible
