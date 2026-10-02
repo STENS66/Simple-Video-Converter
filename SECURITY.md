@@ -8,7 +8,7 @@ Only the versions listed below currently receive security updates.
 
 | Version | Supported | Notes |
 | :--- | :--- | :--- |
-| 1.8.x | ✅ | Current version (Windows & Linux) |
+| 1.9.x | ✅ | Current version (Windows & Linux) |
 | < 1.8 | ❌ | End-of-Life / Obsolete |
 
 
@@ -48,7 +48,7 @@ Seules les versions listées ci-dessous bénéficient actuellement de mises à j
 
 | Version | Supportée | Notes |
 | :--- | :--- | :--- |
-| 1.8.x | ✅ | Version actuelle (Windows & Linux) |
+| 1.9.x | ✅ | Version actuelle (Windows & Linux) |
 | < 1.8 | ❌ | Obsolète |
 
 
